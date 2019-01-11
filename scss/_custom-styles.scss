@@ -1,5 +1,9 @@
 // Add additional styles here. For example, overwrite certain styles or add new components.
 // Tip: You can use bootstrap's powerful mixins here!
+body {
+  padding-top: 4.5rem;
+}
+
 .alert-custom-success {
   @include gradient-x(#59C59E, #35BF7F, 0%, 100%);
 }
@@ -26,5 +30,17 @@ $value in $theme-colors {
     a {
       text-decoration: underline;
     }
+  }
+}
+
+.navbar-nav {
+  li {
+    height: 70px;
+    text-align: center;
+    min-width: 90px;
+  }
+  li.active {
+    border-bottom: 4px solid $red;
+    background: lighten($primary, 10%)
   }
 }

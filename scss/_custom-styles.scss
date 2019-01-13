@@ -44,3 +44,14 @@ $value in $theme-colors {
     background: lighten($primary, 10%)
   }
 }
+
+.card-header {
+  .options {
+    position: absolute;
+    right: 20px;
+    .icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

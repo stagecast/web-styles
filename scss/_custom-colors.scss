@@ -25,6 +25,7 @@ $red-gradient: linear-gradient(90deg, #F17C7C 0%, #E35656 100%);
 $purple-gradient: linear-gradient(90deg, #8070FF 0%, #503AF2 100%);
 $green-gradient: linear-gradient(90deg, #59C59E 0%, #35BF7F 100%);
 $coral-gradient: linear-gradient(180deg, #FB9293 0%, #ED729E 100%);
+
 $gradients-map: ( 
   'yellow': $yellow-gradient, 
   'red': $red-gradient, 
@@ -56,7 +57,7 @@ $hover-map: (
 
 @each $color,$value in $hover-map{
   .#{$color}-hover {
-    background-color: $color 
+    background-color: $value 
   }
 }
 
@@ -77,7 +78,7 @@ $active-map: (
 
 @each $color,$value in $active-map {
   .#{$color}-active {
-    background-color: $color
+    background-color: $value
   }
 }
 

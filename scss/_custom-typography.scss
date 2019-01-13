@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+@mixin text-style {
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'Source Sans Pro';
+    color: $white;
+}
+
+h1 {
+    @include text-style();
+    line-height: 51px;
+    font-size: 40px;
+}
+
+h2 {
+    @include text-style();
+    line-height: 36px;
+    font-size: 28px;
+}
+
+h3 {
+    @include text-style();
+    line-height: 31px;
+    font-size: 24px;
+}
+
+h4 {
+    @include text-style();
+    line-height: 32px;
+    font-size: 20px;
+}
+
+h5 {
+    @include text-style();
+    line-height: 27px;
+    font-size: 18px;
+}
+
+h6 {
+    @include text-style();
+    line-height: 19px;
+    font-size: 14px;
+}
+
+// normal text
+
+.text-xsmall {
+    @include text-style();
+    font-size: 12px;
+    
+}
+
+.text-small {
+    @include text-style();
+    font-size: 13px;
+}
+
+.text-medium {
+    @include text-style();
+    font-size: 14px;
+}
+
+.text-large {
+    @include text-style();
+    font-size: 16px;
+}
+
+// semibold text
+
+.text-xsmall-semibold {
+    @extend .text-xsmall ;
+    font-weight: 600;
+}
+
+.text-small-semibold {
+    @extend .text-small ;
+    font-weight: 600;
+}
+
+.text-medium-semibold {
+    @extend .text-medium ;
+    font-weight: 600;
+}
+
+.text-large-semibold {
+    @extend .text-large ;
+    font-weight: 600;
+}

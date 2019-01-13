@@ -60,6 +60,27 @@ $hover-map: (
   }
 }
 
+//active state
+$purple-active: #503Af2;
+$coral-active: #EE739E;
+$green-active: #35BF7F;
+$red-active: #E35656;
+$yellow-active: #E49358;
+
+$active-map: (
+  'red': $red-active,
+  'yellow': $yellow-active,
+  'green': $green-active,
+  'purple': $purple-active,
+  'coral': $coral-active
+);
+
+@each $color,$value in $active-map {
+  .#{$color}-active {
+    background-color: $color
+  }
+}
+
 
 
 $theme-colors: ("darkblue": $darkblue, "brightblue": $brightblue, "purple": $purple, "coral": $coral, "red": $red, "yellow": $yellow, "green": $green);

@@ -6,11 +6,7 @@ $coral: #F68797;
 $green: #34BE7E;
 $red: #EA6969;
 $yellow: #E9AE60;
-$yellow-gradient: linear-gradient(90deg, #EEC868 0%, #E49358 100%);
-$red-gradient: linear-gradient(90deg, #F17C7C 0%, #E35656 100%);
-$purple-gradient: linear-gradient(90deg, #8070FF 0%, #503AF2 100%);
-$green-gradient: linear-gradient(90deg, #59C59E 0%, #35BF7F 100%);
-$coral-gradient: linear-gradient(180deg, #FB9293 0%, #ED729E 100%);
+
 $darkblue-100: #20293B;
 $darkblue-200: #242E42;
 $darkblue-300: #29334A;
@@ -22,13 +18,50 @@ $darkblue-800: #3F5073;
 $brightblue-100: #7C89A6;
 $brightblue-200: #8F9EBF;
 $brightblue-300: #A2B3D9;
-$theme-colors: ("darkblue": $darkblue, "brightblue": $brightblue, "purple": $purple, "coral": $coral, "red": $red, "yellow": $yellow, "green": $green);
-$blues: ( "darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-100);
-$theme-colors: map-merge($blues, $theme-colors);
-$gradients-map: ( 'yellow': $yellow-gradient, 'red': $red-gradient, 'purple': $purple-gradient, 'green': $green-gradient, 'coral':$coral-gradient);
-@each $color,
-$value in $gradients-map {
+
+// gradient state
+$yellow-gradient: linear-gradient(90deg, #EEC868 0%, #E49358 100%);
+$red-gradient: linear-gradient(90deg, #F17C7C 0%, #E35656 100%);
+$purple-gradient: linear-gradient(90deg, #8070FF 0%, #503AF2 100%);
+$green-gradient: linear-gradient(90deg, #59C59E 0%, #35BF7F 100%);
+$coral-gradient: linear-gradient(180deg, #FB9293 0%, #ED729E 100%);
+$gradients-map: ( 
+  'yellow': $yellow-gradient, 
+  'red': $red-gradient, 
+  'purple': $purple-gradient, 
+  'green': $green-gradient, 
+  'coral':$coral-gradient
+);
+
+@each $color,$value in $gradients-map {
   .#{$color}-gradient {
     background-image: $value;
   }
 }
+
+// hover state
+$purple-hover: #8070FF; 
+$coral-hover: #FB9293;
+$green-hover: #59C59E;
+$red-hover: #F17C7C;
+$yellow-hover: #EEC868;
+
+$hover-map: (
+  'purple': $purple-hover,
+  'coral': $coral-hover,
+  'green': $green-hover,
+  'red': $red-hover,
+  'yellow': $yellow-hover
+);
+
+@each $color,$value in $hover-map{
+  .#{$color}-hover {
+    background-color: $color 
+  }
+}
+
+
+
+$theme-colors: ("darkblue": $darkblue, "brightblue": $brightblue, "purple": $purple, "coral": $coral, "red": $red, "yellow": $yellow, "green": $green);
+$blues: ( "darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-100);
+$theme-colors: map-merge($blues, $theme-colors);

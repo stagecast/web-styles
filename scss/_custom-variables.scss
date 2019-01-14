@@ -27,7 +27,7 @@ $white: #ffffff;
 $alert-bg-level: 0;
 $alert-border-width: 0;
 // fonts 
-$font-family-sans-serif: 'Source Sans Pro',
+$font-family-sans-serif: "Source Sans Pro",
 Helvetica,
 Arial,
 sans-serif;
@@ -42,8 +42,15 @@ Consolas,
 "Courier New",
 monospace;
 $font-family-base: $font-family-sans-serif;
-// Breadcrumbs 
+// Breadcrumbs (ovveride bootstrap)
 $breadcrumb-divider: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%226%22%20height%3D%2210%22%20viewBox%3D%220%200%206%2010%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M1%209L5%204.91976L1.15732%200.999999%22%20stroke%3D%22white%22%20stroke-width%3D%221.25%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 $breadcrumb-active-color: $white;
 $breadcrumb-active-bg-color: $darkblue-300;
 $breadcrumb-item-padding: 1.5em;
+// Progress (ovveride bootstrap)
+// $progress-height: 1rem;
+$custom-progress-height: 1;
+// $progress-font-size: $font-size-base * .75;
+$progress-bg: $darkblue-400;
+$custom-progress-border-radius: 1rem;
+$progress-box-shadow: none;

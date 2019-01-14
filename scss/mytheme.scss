@@ -1,13 +1,13 @@
-/*! My very own Bootstrap 4 Theme
- *
- *  Built on top of Bootstrap 4 (https://getbootstrap.com)
- *  Built with the Bootstrap Theme Kit by HackerThemes (https://hackerthemes.com)
+/** 
+ * My very own Bootstrap 4 Theme
+ * Built on top of Bootstrap 4 (https://getbootstrap.com)
  */
 
-
+@import 'utilities/custom-borders';
 @import 'custom-colors';
 @import 'custom-variables';
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'custom-styles';
 @import 'custom-buttons';
-@import 'custom-typography'; 
+@import 'custom-typography';
+@import 'components/custom-progress';

@@ -1,11 +1,20 @@
 // Colors 
-$darkblue: #20293B;
-$brightblue: #7C89A6;
-$purple: #5E49FD;
-$coral: #F68797;
-$green: #34BE7E;
-$red: #EA6969;
-$yellow: #E9AE60;
+$color-pallete: (
+  $darkblue: #20293B,
+  $brightblue: #7C89A6,
+  $purple: #5E49FD,
+  $coral: #F68797,
+  $green: #34BE7E,
+  $red: #EA6969,
+  $yellow: #E9AE60
+);
+
+@each $color,$value in $color-pallete {
+  &:hover{
+    background: red;
+  }
+}
+
 
 $darkblue-100: #20293B;
 $darkblue-200: #242E42;
@@ -81,6 +90,9 @@ $active-map: (
     background-color: $value
   }
 }
+
+
+
 
 
 

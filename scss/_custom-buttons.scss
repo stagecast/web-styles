@@ -1,0 +1,33 @@
+$hover-pallete: (
+  'danger': $red-hover,
+  'info': $purple-hover,
+  'success': $green-hover,
+  'warning': $yellow-hover,
+  'primary': $darkblue-hover,
+  'secondary': $brightblue-hover,
+  'coral': $coral-hover
+);
+
+@each $color,$value in $hover-pallete {
+    .btn-#{$color}:hover {
+        background: $value;
+    }
+}
+
+$active-pallete: (
+  'danger': $red-active,
+  'info': $purple-active,
+  'success': $green-active,
+  'warning': $yellow-active,
+  'primary': $darkblue-100,
+  'secondary': $brightblue-100,
+  'coral': $coral-active
+);
+
+
+@each $color, $value in $active-pallete {
+    .btn-#{$color}:focus, .btn-#{$color}:active {
+        background: $value;
+    }
+}
+

@@ -51,6 +51,8 @@ $coral-hover: #FB9293;
 $green-hover: #59C59E;
 $red-hover: #F17C7C;
 $yellow-hover: #EEC868;
+$darkblue-hover: #242E42;
+$brightblue-hover: #8F9EBF;
 $hover-map: ( 'purple': $purple-hover, 'coral': $coral-hover, 'green': $green-hover, 'red': $red-hover, 'yellow': $yellow-hover);
 @each $color,
 $value in $hover-map {

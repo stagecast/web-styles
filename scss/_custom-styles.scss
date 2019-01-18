@@ -1,9 +1,8 @@
-// Add additional styles here. For example, overwrite certain styles or add new components.
-// Tip: You can use bootstrap's powerful mixins here!
 body {
   padding-top: 4.5rem;
 }
 
+// alerts
 .alert-custom-success {
   @include gradient-x(#59C59E, #35BF7F, 0%, 100%);
 }
@@ -33,6 +32,7 @@ $value in $theme-colors {
   }
 }
 
+// Navbar
 .navbar-nav {
   li {
     height: 70px;
@@ -57,33 +57,9 @@ $value in $theme-colors {
   }
 }
 
-// breadcrumbs 
+// Breadcrumbs 
 .breadcrumb-item {
-  // The separator between breadcrumbs (by default, a forward-slash: "/")
-  +.breadcrumb-item {
-    padding-left: $breadcrumb-item-padding;
-    &::before {
-      display: inline-block; // Suppress underlining of the separator in modern browsers
-      padding-right: $breadcrumb-item-padding;
-      color: $breadcrumb-divider-color;
-      content: $breadcrumb-divider;
-    }
-  }
-  // IE9-11 hack to properly handle hyperlink underlines for breadcrumbs built
-  // without `<ul>`s. The `::before` pseudo-element generates an element
-  // *within* the .breadcrumb-item and thereby inherits the `text-decoration`.
-  //
-  // To trick IE into suppressing the underline, we give the pseudo-element an
-  // underline and then immediately remove it.
-  +.breadcrumb-item:hover::before {
-    text-decoration: underline;
-  }
-  // stylelint-disable-next-line no-duplicate-selectors
-  +.breadcrumb-item:hover::before {
-    text-decoration: none;
-  }
   &.active {
-    color: $breadcrumb-active-color;
     background-color: $breadcrumb-active-bg-color;
     margin-left: 2em;
     padding: 0.25em 1.5em;

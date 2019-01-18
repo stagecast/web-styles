@@ -505,6 +505,7 @@
 
           <!--Alerts-->
           <div class="text-white bg-dark mb-4 ">Alerts (Default Colors)</div>
+          <!-- standard -->
           <div class="mb-2 alert alert-primary text-white " role="alert ">
             This is a primary alert with <a href="# " class="alert-link ">an example link</a>.
           </div>
@@ -533,13 +534,15 @@
             This is a dark alert with <a href="# " class="alert-link ">an example link</a>.
           </div>
           <div class="text-white bg-dark mb-4 ">Alerts (Custom Colors)</div>
+          <!-- custom -->
           <div class="mb-2 alert alert-coral text-white alert-dismissible " role="alert ">
             This is a coral alert with <a href="# " class="alert-link ">an example link</a>.
           </div>
+          <!-- Toastr -->
           <div class="text-white bg-dark mb-4 ">Toastr (Default Colors)</div>
-
+          <!-- Info 1: icon, a little text and close button -->
           <div class="mb-2 alert alert-custom-info alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
                 <span aria-hidden="true ">
                   <img src="css/imgs/general/close-button.svg " alt="&times; ">
                 </span>
@@ -547,8 +550,45 @@
             <img class="img mr-4 " src="css/imgs/alerts/info.svg " alt=" ">
             <span>This is an info alert-custom!</span>
           </div>
+          <!-- Info 2: no icon, button bottom -->
+          <div class="mb-2 alert alert-custom-info alert-dismissible flex-column">
+            <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
+                <span aria-hidden="true ">
+                  <img src="css/imgs/general/close-button.svg " alt="&times; ">
+                </span>
+              </button>
+            <p class="mr-auto">This is an advise with a bit more text. Let's see how it behaves.</p>
+            <button class="btn btn-small text-white bg-translucent mr-auto">Next</button>
+          </div>
+          <!-- info 3: icon, text and button -->
+          <div class="mb-2 alert alert-custom-info alert-dismissible flex-column">
+            <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+              </span>
+            </button>
+            <div class="d-flex flex-row mb-4">
+              <img class="img mr-4 " src="css/imgs/alerts/info.svg " alt=" ">
+              <span class="mr-auto"> (alternative 1) This is an advise with a bit more text. Let's see how it behaves.</span>
+            </div>
+            <button class="btn btn-small text-white bg-translucent mr-auto">Next</button>
+          </div>
+          <!-- info 4: icon, text and button -->
+          <div class="mb-2 alert alert-custom-info alert-dismissible flex-row">
+            <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+              </span>
+            </button>
+            <img class="img mr-4 " src="css/imgs/alerts/info.svg " alt=" ">
+            <div class="d-flex flex-column">
+              <p class="mr-auto"> (alternative 2) This is an advise with a bit more text. Let's see how it behaves.</p>
+              <button class="btn btn-small text-white bg-translucent mr-auto">Next</button>
+            </div>
+          </div>
+          <!-- Success 1 -->
           <div class="mb-2 alert alert-custom-success alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
                 <span aria-hidden="true ">
                   <img src="css/imgs/general/close-button.svg " alt="&times; ">
                 </span>
@@ -558,7 +598,7 @@
           </div>
 
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
                 <img src="css/imgs/general/close-button.svg " alt="&times; ">
               </span>
@@ -568,7 +608,7 @@
 
           </div>
           <div class="mb-2 alert alert-custom-danger alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
                 <span aria-hidden="true ">
                   <img src="css/imgs/general/close-button.svg " alt="&times; ">
                 </span>
@@ -577,7 +617,7 @@
             <span>This is a danger alert-custom!</span>
           </div>
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
             <span aria-hidden="true ">
               <img src="css/imgs/general/close-button.svg " alt="&times; ">
             </span>
@@ -588,7 +628,7 @@
             </div>
           </div>
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
-            <button type="button " class="close " data-dismiss="alert " aria-label="Close ">
+            <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
                 <img src="css/imgs/general/close-button.svg " alt="&times; ">
               </span>

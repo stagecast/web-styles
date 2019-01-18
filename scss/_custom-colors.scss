@@ -6,6 +6,7 @@ $coral: #F68797;
 $green: #34BE7E;
 $red: #EA6969;
 $yellow: #E9AE60;
+$translucent: #ffffff50;
 $darkblue-100: #20293B;
 $darkblue-200: #242E42;
 $darkblue-300: #29334A;
@@ -30,6 +31,18 @@ $value in $gradients-map {
   .#{$color}-gradient {
     background-image: $value;
   }
+}
+
+.bg-translucent {
+  background-color: #ffffff20!important;
+}
+
+.bg-translucent:hover {
+  background-color: #ffffff30!important;
+}
+
+.bg-translucent:focus {
+  background-color: #ffffff40!important;
 }
 
 // hover state
@@ -61,5 +74,5 @@ $value in $active-map {
 }
 
 $theme-colors: ("darkblue": $darkblue, "brightblue": $brightblue, "purple": $purple, "coral": $coral, "red": $red, "yellow": $yellow, "green": $green);
-$blues: ( "darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-100);
+$blues: ("darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-100);
 $theme-colors: map-merge($blues, $theme-colors);

@@ -34,6 +34,10 @@ textarea {
     border: 0;
     color: #FFFFFF;
 
+    &:hover {
+        background: $darkblue-500;
+    }
+
     &::placeholder {
         color: #7C89A6;
     }

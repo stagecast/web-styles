@@ -5,13 +5,44 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   postcss = require('gulp-postcss'),
   autoprefixer = require('autoprefixer'),
-  svgSprite = require("gulp-svg-sprites");
+  svgSprite = require('gulp-svg-sprite');
 
-gulp.task('sprites', function () {
+// More complex configuration example
+config = {
+  shape: {
+    dimension: { // Set maximum dimensions
+      maxWidth: 30,
+      maxHeight: 30,
+      attributes: true
+    },
+    spacing: { // Add padding
+      padding: 0
+    },
+    dest: 'out/intermediate-svg' // Keep the intermediate files
+  },
+  mode: {
+    css: true, // Create a «css» sprite
+
+    view: { // Activate the «view» mode
+      bust: false,
+      render: {
+        scss: true // Activate Sass output (with default options)
+      }
+    },
+    symbol: {
+      dest: '.',
+      dimensions: "-dims", // Suffix for dimension CSS selectors
+      example: true,
+      sprite: 'main.svg'
+    }
+  }
+};
+
+gulp.task('sprite', function () {
   return gulp
-    .src('scss/svg/*.svg')
-    .pipe(svgSprite())
-    .pipe(gulp.dest("css/imgs/icons/"));
+    .src('**/*.svg', {cwd: 'scss/svg'})
+    .pipe(svgSprite(config))
+    .pipe(gulp.dest('css/'));
 });
 
 gulp.task('build-theme', function () {

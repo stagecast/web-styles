@@ -1,0 +1,64 @@
+%svg-common {
+	background: url("svg/sprite.view.svg") no-repeat;
+}
+
+.svg-close-icon {
+	@extend %svg-common;
+	background-position: 0 97.47826086956522%;
+}
+
+.svg-close-icon-dims {
+	width: 14px;
+	height: 14px;
+}
+
+.svg-close-icon-black {
+	@extend %svg-common;
+	background-position: 60% 86.23076923076923%;
+}
+
+.svg-close-icon-black-dims {
+	width: 11px;
+	height: 11px;
+}
+
+.svg-ideation {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-ideation-dims {
+	width: 30px;
+	height: 22.42px;
+}
+
+.svg-open {
+	@extend %svg-common;
+	background-position: 32.55813953488372% 97.47826086956522%;
+}
+
+.svg-open-dims {
+	width: 13px;
+	height: 14px;
+}
+
+.svg-plus-icon {
+	@extend %svg-common;
+	background-position: 100% 0;
+}
+
+.svg-plus-icon-dims {
+	width: 11px;
+	height: 11px;
+}
+
+.svg-settings {
+	@extend %svg-common;
+	background-position: 73.17073170731707% 0;
+}
+
+.svg-settings-dims {
+	width: 15px;
+	height: 15px;
+}
+

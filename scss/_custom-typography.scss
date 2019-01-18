@@ -45,45 +45,45 @@ h6 {
 
 // normal text
 
-.text-xsmall {
+.text-xs {
     @include text-style();
     font-size: 0.75em;
     
 }
 
-.text-small {
+.text-sm {
     @include text-style();
     font-size: 0.8125em;
 }
 
-.text-medium {
+.text-md {
     @include text-style();
     font-size: 0.875em;
 }
 
-.text-large {
+.text-lg {
     @include text-style();
     font-size: 1em;
 }
 
 // semibold text
 
-.text-xsmall-semibold {
+.text-xs-semibold {
     @extend .text-xsmall ;
     font-weight: 600;
 }
 
-.text-small-semibold {
+.text-sm-semibold {
     @extend .text-small ;
     font-weight: 600;
 }
 
-.text-medium-semibold {
+.text-md-semibold {
     @extend .text-medium ;
     font-weight: 600;
 }
 
-.text-large-semibold {
+.text-lg-semibold {
     @extend .text-large ;
     font-weight: 600;
 }

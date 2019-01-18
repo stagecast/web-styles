@@ -55,32 +55,32 @@ $progress-bg: $darkblue-400;
 $custom-progress-border-radius: 1rem;
 $progress-box-shadow: none;
 
-
 /*Forms*/
-$input-placeholder-color : $secondary;
-$input-bg:$darkblue-400 ;
+
+$input-placeholder-color: $secondary;
+$input-bg:$darkblue-400;
 $input-border-radius: 4px;
 $input-border-color:$darkblue-400;
 $input-color: #FFFFFFFF;
 $input-placeholder-color: $secondary;
 $input-focus-box-shadow: 0;
-
 // focus
 $input-focus-bg: $darkblue-500;
 $input-focus-border-color:$secondary;
-
-
 // large
 $input-line-height-lg: 21px;
-$input-padding-y-lg :15px; 
+$input-padding-y-lg :15px;
 $input-padding-x-lg:11px;
 $input-height-lg: 50px;
-
+//normal
+$input-line-height: 21px;
+$input-padding-y :13px;
+$input-padding-x:11px;
+$input-height: 46px;
 // small
-$input-padding-y-sm:11px;           
-$input-padding-x-sm:11px;        
+$input-padding-y-sm:11px;
+$input-padding-x-sm:11px;
 $input-line-height-sm: 21px;
 $input-height-sm: 42px;
-
 // small
 $text-muted: $secondary;

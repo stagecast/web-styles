@@ -69,21 +69,21 @@ h6 {
 // semibold text
 
 .text-xs-semibold {
-    @extend .text-xsmall ;
+    @extend .text-xs ;
     font-weight: 600;
 }
 
 .text-sm-semibold {
-    @extend .text-small ;
+    @extend .text-sm ;
     font-weight: 600;
 }
 
 .text-md-semibold {
-    @extend .text-medium ;
+    @extend .text-md ;
     font-weight: 600;
 }
 
 .text-lg-semibold {
-    @extend .text-large ;
+    @extend .text-lg ;
     font-weight: 600;
 }

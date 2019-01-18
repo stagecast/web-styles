@@ -1,0 +1,37 @@
+
+
+body {
+    background: $primary;
+    font-size: 16px;
+}
+
+.form-group label {
+    line-height: 21px;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.form-group small {
+    line-height: 19px;
+    font-size: 0.875em;
+}
+
+.form-control {
+    font-size: 1em;
+}
+.form-control:hover {
+    background: $darkblue-500;
+}
+
+
+textarea { 
+    width: 100%;
+    max-width: 551px;
+    height: 80px;
+    outline: none;
+    padding:15px;
+    background: $darkblue-400;
+    border: 0;
+    color: #FFFFFF;
+}
+

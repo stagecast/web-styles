@@ -7,7 +7,7 @@ body {
 
 .form-group label {
     line-height: 21px;
-    font-size: 16px;
+    font-size: 1em;
     color: #FFFFFF;
 }
 
@@ -33,5 +33,9 @@ textarea {
     background: $darkblue-400;
     border: 0;
     color: #FFFFFF;
+
+    &::placeholder {
+        color: #7C89A6;
+    }
 }
 

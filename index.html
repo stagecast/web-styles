@@ -8,30 +8,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
+  <link rel="stylesheet" href="css/icons/css/sprite.css">
   <link rel="stylesheet" href="css/mytheme.min.css">
 </head>
 
 <body>
   <header class="navbar navbar-expand-lg navbar-dark bg-primary pt-lg-0 pb-lg-0 fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <a class="navbar-brand" href="#!"><img src="./css/imgs/general/logo.svg" alt="Stagecast"></a>
 
     <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item active">
           <a class="nav-link mt-3" href="#!">Home
-          <span class="sr-only">(current)</span>
-        </a>
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mt-3" href="#!">Event List
-        </a>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mt-3" href="#!">Long Long Item
-        </a>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mt-3" href="#!">Link</a>
@@ -50,7 +51,8 @@
           <div class="d-flex align-items-center">
             <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg" alt="AB">
             <div class="text-left">
-              <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan Smith</span>
+              <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+                Smith</span>
               <span class="small d-block text-white ">Organiser</span>
             </div>
           </div>
@@ -199,23 +201,85 @@
           <!--Buttons-->
 
           <div>
-            <div class="text-white bg-dark mt-4 mb-4 ">Large Buttons</div>
-            <button type="button " class="btn btn-primary btn-large ">Primary</button>
-            <button type="button " class="btn btn-secondary btn-large">Secondary</button>
-            <button type="button " class="btn btn-success btn-large">Success</button>
-            <button type="button " class="btn btn-danger btn-large ">Danger</button>
-            <button type="button " class="btn btn-info btn-large"> Info</button>
+            <div class="text-white bg-dark mt-4 mb-4 ">Small Buttons</div>
+            <button type="button" class="btn btn-primary btn-sm mt-2">Primary</button>
+            <button type="button" class="btn btn-secondary btn-sm mt-2">Secondary</button>
+            <button type="button" class="btn btn-success btn-sm mt-2">Success</button>
+            <button type="button" class="btn btn-danger btn-sm mt-2">Danger</button>
+            <button type="button" class="btn btn-info btn-sm mt-2"> Info</button>
+            <button type="button" class="btn btn-info btn-sm mt-2" disabled>Disabled</button>
+          </div>
+
+          <div class="bg-darkblue-100">
+            <div class="text-white bg-dark mt-4 mb-4 ">Small Buttons</div>
+            <button type="button" class="btn btn-primary btn-sm mt-2">Primary</button>
+            <button type="button" class="btn btn-primary btn-sm mt-2" disabled>Primary </button>
+            <button type="button" class="btn btn-secondary btn-sm mt-2">Secondary</button>
+            <button type="button" class="btn btn-secondary btn-sm mt-2" disabled>Secondary </button>
+            <button type="button" class="btn btn-success btn-sm mt-2">Success</button>
+            <button type="button" class="btn btn-success btn-sm mt-2" disabled>Success </button>
+            <button type="button" class="btn btn-danger btn-sm mt-2">Danger</button>
+            <button type="button" class="btn btn-danger btn-sm mt-2" disabled>Danger </button>
+            <button type="button" class="btn btn-info btn-sm mt-2"> Info</button>
+            <button type="button" class="btn btn-info btn-sm mt-2" disabled>Info </button>
           </div>
           <div class="mt-2 ">
-            <button type="button " class="btn btn-warning ">Warning</button>
-            <button type="button " class="btn btn-info ">Info</button>
-            <button type="button " class="btn btn-light ">Light</button>
-            <button type="button " class="btn btn-dark ">Dark</button>
-            <button type="button " class="btn btn-coral ">coral</button>
+            <div class="text-white bg-dark mt-4 mb-4 ">Normal Buttons</div>
+
+            <button type="button" class="btn btn-primary mt-2">Primary</button>
+            <button type="button" class="btn btn-secondary mt-2">Secondary</button>
+            <button type="button" class="btn btn-warning mt-2">Warning</button>
+            <button type="button" class="btn btn-danger mt-2">Danger</button>
+            <button type="button" class="btn btn-info mt-2">Info</button>
+            <button type="button" class="btn btn-light mt-2">Light</button>
+            <button type="button" class="btn btn-dark mt-2">Dark</button>
+            <button type="button" class="btn btn-coral mt-2">coral</button>
+          </div>
+          <div class="mt-2 ">
+            <div class="text-white bg-dark mt-4 mb-4 ">Normal Buttons with icons</div>
+
+            <button type="button" class="btn btn-primary bbb mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Primary</button>
+            <button type="button" class="btn btn-secondary mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Secondary</button>
+            <button type="button" class="btn btn-secondary mt-2">
+              <span class="icon plus-icon"></span>
+              Secondary</button>
+            <button type="button" class="btn btn-warning mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Warning</button>
+            <button type="button" class="btn btn-danger mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Danger</button>
+            <button type="button" class="btn btn-info mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Info</button>
+            <button type="button" class="btn btn-light mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Light</button>
+            <button type="button" class="btn btn-dark mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              Dark</button>
+            <button type="button" class="btn btn-coral mt-2">
+              <img src="css/imgs/general/plus-icon.svg " alt="&times; ">
+              coral</button>
+          </div>
+          <div>
+            <div class="text-white bg-dark mt-4 mb-4 ">Large Buttons</div>
+            <button type="button " class="btn btn-primary btn-lg mt-2">Primary</button>
+            <button type="button " class="btn btn-secondary btn-lg mt-2">Secondary</button>
+            <button type="button " class="btn btn-success btn-lg mt-2">Success</button>
+            <button type="button " class="btn btn-warning btn-lg mt-2">Warning</button>
+            <button type="button " class="btn btn-danger btn-lg mt-2">Danger</button>
+            <button type="button " class="btn btn-info btn-lg mt-2"> Info</button>
           </div>
 
           <!--Outline Buttons-->
           <div class="mt-2 ">
+            <div class="text-white bg-dark mt-4 mb-4 ">Outline Buttons</div>
+
             <button type="button " class="btn btn-outline-primary ">Primary</button>
             <button type="button " class="btn btn-outline-secondary ">Secondary</button>
             <button type="button " class="btn btn-outline-success ">Success</button>
@@ -234,36 +298,36 @@
           <div class="mt-3 ">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-primary active">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
 
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-secondary active ">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-secondary">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
             <div class="btn-group btn-group-toggle " data-toggle="buttons">
               <label class="btn btn-success active">
-            <input type="checkbox" checked autocomplete="off "> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off "> Yes
+              </label>
               <label class="btn btn-success">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
             <div class="btn-group btn-group-toggle " data-toggle="buttons">
               <label class="btn btn-danger active">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-danger">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
 
           </div>
@@ -271,35 +335,35 @@
           <div class="mt-2 ">
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-warning active ">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-warning ">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-info active ">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-info ">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-light active ">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-light ">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
             <div class="btn-group btn-group-toggle" data-toggle="buttons">
               <label class="btn btn-dark active ">
-            <input type="checkbox" checked autocomplete="off"> Yes
-          </label>
+                <input type="checkbox" checked autocomplete="off"> Yes
+              </label>
               <label class="btn btn-dark ">
-            <input type="checkbox" autocomplete="off"> No
-          </label>
+                <input type="checkbox" autocomplete="off"> No
+              </label>
             </div>
           </div>
 
@@ -309,8 +373,8 @@
             <div class="btn-group ">
               <button type="button " class="btn btn-primary ">Primary</button>
               <button type="button " class="btn btn-primary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="# ">Action</a>
                 <a class="dropdown-item " href="# ">Another action</a>
@@ -323,8 +387,8 @@
             <div class="btn-group ">
               <button type="button " class="btn btn-secondary ">Secondary</button>
               <button type="button " class="btn btn-secondary dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="# ">Action</a>
                 <a class="dropdown-item " href="# ">Another action</a>
@@ -337,8 +401,8 @@
             <div class="btn-group ">
               <button type="button " class="btn btn-success ">Success</button>
               <button type="button " class="btn btn-success dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="# ">Action</a>
                 <a class="dropdown-item " href="# ">Another action</a>
@@ -353,8 +417,8 @@
             <div class="btn-group ">
               <button type="button " class="btn btn-info ">Info</button>
               <button type="button " class="btn btn-info dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="# ">Action</a>
                 <a class="dropdown-item " href="# ">Another action</a>
@@ -367,8 +431,8 @@
             <div class="btn-group ">
               <button type="button " class="btn btn-warning ">Warning</button>
               <button type="button " class="btn btn-warning dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="# ">Action</a>
                 <a class="dropdown-item " href="# ">Another action</a>
@@ -381,8 +445,8 @@
             <div class="btn-group ">
               <button type="button" class="btn btn-danger">Danger</button>
               <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split " data-toggle="dropdown " aria-haspopup="true " aria-expanded="false ">
-            <span class="sr-only ">Toggle Dropdown</span>
-          </button>
+                <span class="sr-only ">Toggle Dropdown</span>
+              </button>
               <div class="dropdown-menu ">
                 <a class="dropdown-item " href="#">Action</a>
                 <a class="dropdown-item " href="#">Another action</a>
@@ -419,18 +483,18 @@
               <label class="custom-control-label" for="customRadio1">Custom radio</label>
             </div>
             <select class="custom-select ">
-          <option selected>Custom select menu</option>
-          <option value="1 ">One</option>
-          <option value="2 ">Two</option>
-          <option value="3 ">Three</option>
-        </select>
+              <option selected>Custom select menu</option>
+              <option value="1 ">One</option>
+              <option value="2 ">Two</option>
+              <option value="3 ">Three</option>
+            </select>
           </div>
 
           <div class="mt-2 ">
             <label class="custom-file ">
-          <input type="file " id="file " class="custom-file-input ">
-          <span class="custom-file-control "></span>
-        </label>
+              <input type="file " id="file " class="custom-file-input ">
+              <span class="custom-file-control "></span>
+            </label>
           </div>
 
 
@@ -446,8 +510,8 @@
                 </li>
                 <li class="page-item active ">
                   <span class="page-link ">
-                2
-                <span class="sr-only ">(current)</span>
+                    2
+                    <span class="sr-only ">(current)</span>
                   </span>
                 </li>
                 <li class="page-item ">
@@ -531,20 +595,20 @@
           <!-- Info 1: icon, a little text and close button -->
           <div class="mb-2 alert alert-custom-info alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
-                <span aria-hidden="true ">
-                  <img src="css/imgs/general/close-button.svg " alt="&times; ">
-                </span>
-              </button>
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
+              </span>
+            </button>
             <img class="img mr-4 " src="css/imgs/alerts/info.svg " alt=" ">
             <span>This is an advise</span>
           </div>
           <!-- Info 2: no icon, button bottom -->
           <div class="mb-2 alert alert-custom-info alert-dismissible flex-column">
             <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
-                <span aria-hidden="true ">
-                  <img src="css/imgs/general/close-button.svg " alt="&times; ">
-                </span>
-              </button>
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
+              </span>
+            </button>
             <p class="mr-auto">This is an advise with a bit more text. Let's see how it behaves.</p>
             <button class="btn btn-small text-white bg-translucent mr-auto">Next</button>
           </div>
@@ -552,7 +616,7 @@
           <div class="mb-2 alert alert-custom-info alert-dismissible flex-column">
             <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
-                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
               </span>
             </button>
             <div class="d-flex flex-row mb-4">
@@ -565,7 +629,7 @@
           <div class="mb-2 alert alert-custom-info alert-dismissible flex-row">
             <button type="button " class="close" data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
-                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
               </span>
             </button>
             <img class="img mr-4 " src="css/imgs/alerts/info.svg " alt=" ">
@@ -577,10 +641,10 @@
           <!-- Success 1 -->
           <div class="mb-2 alert alert-custom-success alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
-                <span aria-hidden="true ">
-                  <img src="css/imgs/general/close-button.svg " alt="&times; ">
-                </span>
-              </button>
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
+              </span>
+            </button>
             <img class="img mr-4 " src="css/imgs/alerts/success.svg " alt=" ">
             <span>This is a success message</span>
           </div>
@@ -588,7 +652,7 @@
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
-                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
               </span>
             </button>
             <img class="img mr-4 " src="css/imgs/alerts/warning.svg " alt=" ">
@@ -597,19 +661,19 @@
           </div>
           <div class="mb-2 alert alert-custom-danger alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
-                <span aria-hidden="true ">
-                  <img src="css/imgs/general/close-button.svg " alt="&times; ">
-                </span>
-              </button>
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
+              </span>
+            </button>
             <img class="img mr-4 " src="css/imgs/alerts/danger.svg " alt=" ">
             <span>This is an error message</span>
           </div>
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
-            <span aria-hidden="true ">
-              <img src="css/imgs/general/close-button.svg " alt="&times; ">
-            </span>
-          </button>
+              <span aria-hidden="true ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
+              </span>
+            </button>
             <img class="img mr-4 " src="css/imgs/alerts/warning.svg " alt=" ">
             <div>
               <strong>Hello everybody!</strong> This is a long toast message to test how it looks like.
@@ -618,13 +682,14 @@
           <div class="mb-2 alert alert-custom-warning alert-dismissible ">
             <button type="button " class="close " data-dismiss="alert" aria-label="Close ">
               <span aria-hidden="true ">
-                <img src="css/imgs/general/close-button.svg " alt="&times; ">
+                <img src="css/imgs/general/close-icon.svg " alt="&times; ">
               </span>
             </button>
             <img class="img mr-4 " src="css/imgs/alerts/warning.svg " alt=" ">
             <div>
               <strong>Hello everybody!</strong>
-              <p>A alert-custom with a <a class="text-white text-underline " href="https://google.com ">link to a website</a>.</p>
+              <p>A alert-custom with a <a class="text-white text-underline " href="https://google.com ">link to a
+                  website</a>.</p>
             </div>
           </div>
 

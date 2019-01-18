@@ -1,0 +1,65 @@
+.icon {
+    font-size: 10px;
+}
+
+.icon:before {
+    content:' ';
+    vertical-align:middle;
+    display: inline-block;
+    background-image: url("../svg/sprite.svg");
+    background-repeat: no-repeat;
+    background-size: 9.5em 12.5em;
+}
+
+.no-svg .icon:before {
+    background-image: url("../svg/sprite.png");
+}
+
+
+
+  .icon.close-icon:before {
+      background-position: 0em 0em;
+      width: 1.4em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.ideation:before {
+      background-position: 0em -1.4em;
+      width: 9.5em;
+      height: 7.1em;
+  }
+
+
+
+
+  .icon.open:before {
+      background-position: 0em -8.5em;
+      width: 1.3em;
+      height: 1.4em;
+  }
+
+
+
+
+  .icon.plus-icon:before {
+      background-position: 0em -9.9em;
+      width: 1.1em;
+      height: 1.1em;
+  }
+
+
+
+
+  .icon.settings:before {
+      background-position: 0em -11em;
+      width: 1.5em;
+      height: 1.5em;
+  }
+
+
+
+
+

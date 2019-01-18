@@ -31,3 +31,14 @@ $active-pallete: (
     }
 }
 
+
+// sizes
+$btn-width: 152px;
+$btn-large: 41px;
+
+.btn-large {
+    height:$btn-large;
+    width: $btn-width;
+    font-size: 16px;
+}
+

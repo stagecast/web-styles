@@ -25,13 +25,22 @@ $value in $theme-colors {
   .alert-custom-#{$color} {
     @include alert-variant(transparent, transparent, #f4fdff);
     display: flex;
+    width: 100%;
+    max-width: 350px;
     align-items: center;
     border-radius: 6px;
     a {
       text-decoration: underline;
     }
+
+    .btn {
+      background: #FFFFFFFF;
+      opacity: 0.2
+    }
   }
 }
+
+
 
 .navbar-nav {
   li {

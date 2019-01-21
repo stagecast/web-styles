@@ -1,4 +1,43 @@
-$hover-pallete: ( 'danger': $red-hover, 'info': $purple-hover, 'success': $green-hover, 'warning': $yellow-hover, 'primary': $darkblue-hover, 'secondary': $brightblue-hover, 'coral': $coral-hover);
+.glyphicon {
+  position: relative;
+  bottom: 1px;
+  display: inline-block;
+  font-family: "Glyphicons Halflings";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Individual icons
+.glyphicon-asterisk {
+  &:before {
+    content: "\002a";
+  }
+}
+
+.glyphicon-plus {
+  &:before {
+    content: "\002b";
+  }
+}
+
+.glyphicon-chevron-right {
+  &:before {
+    content: "\003c";
+  }
+}
+
+
+$hover-pallete: ('danger': $red-hover,
+'info': $purple-hover,
+'success': $green-hover,
+'warning': $yellow-hover,
+'primary': $darkblue-hover,
+'secondary': $brightblue-hover,
+'coral': $coral-hover);
+
 @each $color,
 $value in $hover-pallete {
   .btn-#{$color}:hover {
@@ -6,9 +45,17 @@ $value in $hover-pallete {
   }
 }
 
-$active-pallete: ( 'danger': $red-active, 'info': $purple-active, 'success': $green-active, 'warning': $yellow-active, 'primary': $darkblue-100, 'secondary': $brightblue-100, 'coral': $coral-active);
+$active-pallete: ('danger': $red-active,
+'info': $purple-active,
+'success': $green-active,
+'warning': $yellow-active,
+'primary': $darkblue-100,
+'secondary': $brightblue-100,
+'coral': $coral-active);
+
 @each $color,
 $value in $active-pallete {
+
   .btn-#{$color}:focus,
   .btn-#{$color}:active {
     background: $value;
@@ -18,6 +65,7 @@ $value in $active-pallete {
 // sizes
 $btn-width: 152px;
 $btn-large: 41px;
+
 .btn-large {
   height: $btn-large;
   width: $btn-width;

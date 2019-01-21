@@ -1,34 +1,6 @@
-.glyphicon {
-  position: relative;
-  bottom: 1px;
-  display: inline-block;
-  font-family: "Glyphicons Halflings";
-  font-style: normal;
-  font-weight: 600;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-// Individual icons
-.glyphicon-asterisk {
-  &:before {
-    content: "\002a";
-  }
-}
-
-.glyphicon-plus {
-  &:before {
-    content: "\002b";
-  }
-}
-
-.glyphicon-chevron-right {
-  &:before {
-    content: "\003c";
-  }
-}
-
+// sizes
+$btn-width: 152px;
+$btn-large: 41px;
 
 $hover-pallete: ('danger': $red-hover,
 'info': $purple-hover,
@@ -62,9 +34,7 @@ $value in $active-pallete {
   }
 }
 
-// sizes
-$btn-width: 152px;
-$btn-large: 41px;
+
 
 .btn-large {
   height: $btn-large;
@@ -74,6 +44,23 @@ $btn-large: 41px;
 
 .btn {
   border: none;
+  position: relative;
+}
+
+.btn-txt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  height: 11px;
+  width: 11px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
 }
 
 .btn.plus-icon {

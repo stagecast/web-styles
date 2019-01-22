@@ -1,6 +1,6 @@
 // sizes
 $btn-width: 152px;
-$btn-large: 41px;
+$btn-large: 35px;
 
 $hover-pallete: ('danger': $red-hover,
 'info': $purple-hover,
@@ -34,8 +34,6 @@ $value in $active-pallete {
   }
 }
 
-
-
 .btn-large {
   height: $btn-large;
   width: $btn-width;
@@ -44,23 +42,18 @@ $value in $active-pallete {
 
 .btn {
   border: none;
-  position: relative;
 }
 
 .btn-txt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  vertical-align: text-top;
+  text-align: center;
+  line-height: 19px;
 }
 
 .icon {
-  height: 11px;
   width: 11px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 15px;
+  float: left;
+  height: 100%;
 }
 
 .btn.plus-icon {

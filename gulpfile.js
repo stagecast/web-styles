@@ -40,7 +40,7 @@ config = {
 
 gulp.task('sprite', function () {
   return gulp
-    .src('**/*.svg', {cwd: 'scss/svg'})
+    .src('**/*.svg', {cwd: 'scss/icons'})
     .pipe(svgSprite(config))
     .pipe(gulp.dest('css/'));
 });

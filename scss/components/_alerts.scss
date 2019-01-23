@@ -1,0 +1,30 @@
+.alert-custom-success {
+  @include gradient-x(#59C59E, #35BF7F, 0%, 100%);
+}
+
+.alert-custom-info {
+  @include gradient-x(#8070FF, #503AF2, 0%, 100%);
+}
+
+.alert-custom-warning {
+  @include gradient-x(#EDC868, #E49358, 0%, 100%);
+}
+
+.alert-custom-danger {
+  @include gradient-x(#F17C7C, #E35656, 0%, 100%);
+}
+
+@each $color,
+$value in $theme-colors {
+  .alert-custom-#{$color} {
+    @include alert-variant(transparent, transparent, #f4fdff);
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    align-items: center;
+    border-radius: 6px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,6 +1,3 @@
-// sizes
-// $btn-width: 152px;
-// $btn-large: 35px;
 $hover-pallete: ('danger': $red-hover, 'info': $purple-hover, 'success': $green-hover, 'warning': $yellow-hover, 'primary': $darkblue-hover, 'secondary': $brightblue-hover, 'coral': $coral-hover);
 @each $color,
 $value in $hover-pallete {
@@ -18,22 +15,10 @@ $value in $active-pallete {
   }
 }
 
-// .btn-large {
-//   height: $btn-large;
-//   width: $btn-width;
-//   font-size: 16px;
-// }
-// .btn-txt {
-//   vertical-align: text-top;
-//   text-align: center;
-//   line-height: 19px;
-// }
-// .btn.plus-icon {
-//   background-image: url("css/imgs/general/plus-icon.svg");
-//   background-repeat: no-repeat;
-//   background-position-x: 0.75em;
-//   background-position-y: 20%;
-// }
+.btn {
+  border: none;
+}
+
 .icon {
   width: 1rem;
   height: 1rem;

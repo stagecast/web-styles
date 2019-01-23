@@ -1,0 +1,18 @@
+/** 
+ * Stagecast Custom Bootstrap 4 Theme
+ * Built on top of Twitter Bootstrap 4 (https://getbootstrap.com)
+ */
+
+@import 'sc-colors'; // new colors
+@import 'sc-variables'; // override bootstrap variables
+@import '../node_modules/bootstrap/scss/bootstrap'; // bootstrap
+// custom general syles (override bootstrap)
+@import 'sc-styles';
+// custom utilities
+@import 'utilities/custom-borders';
+// custom components
+@import 'components/alerts';
+@import 'components/buttons';
+@import 'components/typography';
+@import 'components/progress';
+@import 'components/inputs';

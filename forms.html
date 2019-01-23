@@ -14,24 +14,24 @@
 <body class="bg-darkblue-100">
   <header class="navbar navbar-expand-lg navbar-dark bg-darkblue-300 pt-lg-0 pb-lg-0 fixed-top">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <a class="navbar-brand" href="#!"><img src="./css/imgs/general/logo.svg" alt="Stagecast"></a>
 
     <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+        <li class="nav-item">
+          <a class="nav-link mt-3" href="./index.html">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
         <li class="nav-item active">
-          <a class="nav-link mt-3" href="#!">Home
-          <span class="sr-only">(current)</span>
-        </a>
+          <a class="nav-link mt-3" href="./forms.html">Forms
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link mt-3" href="#!">Event List
-        </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-3" href="#!">Long Long Item
-        </a>
+          <a class="nav-link mt-3" href="./colors.html">Colors
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link mt-3" href="#!">Link</a>
@@ -50,7 +50,8 @@
           <div class="d-flex align-items-center">
             <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg" alt="AB">
             <div class="text-left">
-              <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan Smith</span>
+              <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+                Smith</span>
               <span class="small d-block text-white ">Organiser</span>
             </div>
           </div>
@@ -92,73 +93,118 @@
         </div>
       </div>
       <div class="row mt-3 ">
-        <div class="col-lg-3 col-md-6 ">
+        <div class="col-12 col-lg-4 col-md-6 ">
           <!-- Inputs-->
-          <div class="text-white bg-dark mt-4 mb-4 ">Inputs</div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address (large)</label>
-            <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
+          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Inputs</div>
+          <form action="" autocomplete="off">
 
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address (normal)</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address (small)</label>
-            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address (small, warn)</label>
-            <input type="email" class="form-control form-control-sm border-warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address (small, danger)</label>
-            <input type="email" class="form-control form-control-sm border-danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
-          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email name (large)</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Enter name" autocomplete="name">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (large)</label>
+              <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
 
-          <div class="form-group">
-            <label for="exampleInputEmail1">Text area (small)</label>
-            <textarea class="form-control form-control-sm" rows="4" placeholder="Please insert your input"></textarea>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Text area (normal)</label>
-            <textarea class="form-control" rows="5" placeholder="Please insert your input"></textarea>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Text area (large)</label>
-            <textarea class="form-control form-control-lg" rows="6" placeholder="Please insert your input"></textarea>
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (normal)</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small)</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small, warn)</label>
+              <input type="email" class="form-control form-control-sm border-warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small, danger)</label>
+              <input type="email" class="form-control form-control-sm border-danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (small)</label>
+              <textarea class="form-control form-control-sm" rows="4" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (normal)</label>
+              <textarea class="form-control" rows="5" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (large)</label>
+              <textarea class="form-control form-control-lg" rows="6" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </form>
+        </div>
+        <div class="col-12 col-lg-4 col-md-6 ">
+          <!-- Inputs-->
+          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Inputs</div>
+          <form action="" autocomplete="off">
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email name (large)</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Enter name" autocomplete="name">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (large)</label>
+              <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (normal)</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small)</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small, warn)</label>
+              <input type="email" class="form-control form-control-sm border-warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small, danger)</label>
+              <input type="email" class="form-control form-control-sm border-danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+            </div>
+
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (small)</label>
+              <textarea class="form-control form-control-sm" rows="4" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (normal)</label>
+              <textarea class="form-control" rows="5" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Text area (large)</label>
+              <textarea class="form-control form-control-lg" rows="6" placeholder="Please insert your input"></textarea>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </main>
-  <div class="mt-4 coral-gradient text-white " style="height:50px ">Useful Links:</div>
-  <ul>
-    <li>
-      <a href="https://getbootstrap.com/docs/4.2/getting-started/theming/#sass-options ">Bootstrap Sass Options</a>
-    </li>
-    <li>
-      <a href="https://getbootstrap.com/docs/4.0/getting-started/theming/ ">Bootstrap Sass Options (2)</a>
-    </li>
-    <li>
-      <a href="https://hackerthemes.com/kit/ ">Theme Kit</a>
-    </li>
-    <li>
-      <a href="https://hackerthemes.com/bootstrap-themes/growth/ ">Theme #1</a>
-    </li>
-    <li>
-      <a href="https://www.figma.com/file/WIntm5Uxr675gpcYvKI21ZwB/Here-%26-Now-Manual?node-id=258%3A4 ">Figma</a>
-    </li>
-  </ul>
+
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>

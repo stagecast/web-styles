@@ -1,44 +1,62 @@
-$hover-pallete: (
-  'danger': $red-hover,
-  'info': $purple-hover,
-  'success': $green-hover,
-  'warning': $yellow-hover,
-  'primary': $darkblue-hover,
-  'secondary': $brightblue-hover,
-  'coral': $coral-hover
-);
-
-@each $color,$value in $hover-pallete {
-    .btn-#{$color}:hover {
-        background: $value;
-    }
-}
-
-$active-pallete: (
-  'danger': $red-active,
-  'info': $purple-active,
-  'success': $green-active,
-  'warning': $yellow-active,
-  'primary': $darkblue-100,
-  'secondary': $brightblue-100,
-  'coral': $coral-active
-);
-
-
-@each $color, $value in $active-pallete {
-    .btn-#{$color}:focus, .btn-#{$color}:active {
-        background: $value;
-    }
-}
-
-
 // sizes
-$btn-width: 152px;
-$btn-large: 41px;
-
-.btn-large {
-    height:$btn-large;
-    width: $btn-width;
-    font-size: 16px;
+// $btn-width: 152px;
+// $btn-large: 35px;
+$hover-pallete: ('danger': $red-hover, 'info': $purple-hover, 'success': $green-hover, 'warning': $yellow-hover, 'primary': $darkblue-hover, 'secondary': $brightblue-hover, 'coral': $coral-hover);
+@each $color,
+$value in $hover-pallete {
+  .btn-#{$color}:hover {
+    background: $value;
+  }
 }
 
+$active-pallete: ('danger': $red-active, 'info': $purple-active, 'success': $green-active, 'warning': $yellow-active, 'primary': $darkblue-100, 'secondary': $brightblue-100, 'coral': $coral-active);
+@each $color,
+$value in $active-pallete {
+  .btn-#{$color}:focus,
+  .btn-#{$color}:active {
+    background-color: $value;
+  }
+}
+
+// .btn-large {
+//   height: $btn-large;
+//   width: $btn-width;
+//   font-size: 16px;
+// }
+// .btn-txt {
+//   vertical-align: text-top;
+//   text-align: center;
+//   line-height: 19px;
+// }
+// .btn.plus-icon {
+//   background-image: url("css/imgs/general/plus-icon.svg");
+//   background-repeat: no-repeat;
+//   background-position-x: 0.75em;
+//   background-position-y: 20%;
+// }
+.icon {
+  width: 1rem;
+  height: 1rem;
+  float: left;
+}
+
+.btn {
+  .icon {
+    height: $btn-padding-y + 0.25 + $font-size-base;
+    padding: 0 0.15rem;
+  }
+}
+
+.btn-sm {
+  .icon {
+    height: $btn-padding-y-sm + 0.25 + $font-size-sm;
+    padding: 0 0.2rem;
+  }
+}
+
+.btn-lg {
+  .icon {
+    height: $btn-padding-y-lg + 0.25 + $font-size-lg;
+    padding: 0 0.1rem;
+  }
+}

@@ -4,22 +4,12 @@
 
 .svg-close-icon {
 	@extend %svg-common;
-	background-position: 0 97.47826086956522%;
+	background-position: 71.42857142857143% 44.11764705882353%;
 }
 
 .svg-close-icon-dims {
 	width: 14px;
 	height: 14px;
-}
-
-.svg-close-icon-black {
-	@extend %svg-common;
-	background-position: 60% 86.23076923076923%;
-}
-
-.svg-close-icon-black-dims {
-	width: 11px;
-	height: 11px;
 }
 
 .svg-ideation {
@@ -34,7 +24,7 @@
 
 .svg-open {
 	@extend %svg-common;
-	background-position: 32.55813953488372% 97.47826086956522%;
+	background-position: 69.76744186046511% 85.29411764705883%;
 }
 
 .svg-open-dims {
@@ -60,5 +50,15 @@
 .svg-settings-dims {
 	width: 15px;
 	height: 15px;
+}
+
+.svg-upload-icon {
+	@extend %svg-common;
+	background-position: 0 98.33333333333333%;
+}
+
+.svg-upload-icon-dims {
+	width: 30px;
+	height: 25.2px;
 }
 

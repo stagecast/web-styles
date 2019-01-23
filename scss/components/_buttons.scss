@@ -22,11 +22,11 @@ $value in $active-pallete {
 .icon {
   width: 1rem;
   height: 1rem;
-  float: left;
 }
 
 .btn {
   .icon {
+    float: left;
     height: $btn-padding-y + 0.25 + $font-size-base;
     padding: 0 0.15rem;
   }
@@ -34,6 +34,7 @@ $value in $active-pallete {
 
 .btn-sm {
   .icon {
+    float: left;
     height: $btn-padding-y-sm + 0.25 + $font-size-sm;
     padding: 0 0.2rem;
   }
@@ -41,6 +42,7 @@ $value in $active-pallete {
 
 .btn-lg {
   .icon {
+    float: left;
     height: $btn-padding-y-lg + 0.25 + $font-size-lg;
     padding: 0 0.1rem;
   }

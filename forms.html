@@ -149,55 +149,99 @@
         </div>
         <div class="col-12 col-lg-4 col-md-6 ">
           <!-- Inputs-->
-          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Inputs</div>
+          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Other Inputs</div>
           <form action="" autocomplete="off">
 
+            <!-- File Drop Component -->
             <div class="form-group">
-              <label for="exampleInputEmail1">Email name (large)</label>
-              <input type="text" class="form-control form-control-lg" placeholder="Enter name" autocomplete="name">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+              <label for="dropFileInput">Drop file</label>
+              <div class="dropzone-container dotted-border">
+                <div class="text-center pt-4 pb-4">
+                  <svg class="icon icon-brightblue-100 d-block" style="width:100%; height: 50px">
+                    <use xlink:href="css/main.svg#upload-icon"></use>
+                  </svg>
+                  <button id="dropFileInput" class="btn btn-secondary mt-4" style="width:160px">Upload an image
+                  </button>
+                </div>
+              </div>
             </div>
+            <div class="form-group">
+              <label>Radio Buttons</label>
+              <div class="custom-control custom-radio ">
+                <input type="radio" id="customRadio1" value="1" name="customRadio" class="custom-control-input" checked aria-checked="true">
+                <label class="custom-control-label" for="customRadio1">Custom radio</label>
+              </div>
+              <div class="custom-control custom-radio ">
+                <input type="radio" id="customRadio2" value="2" name="customRadio" class="custom-control-input" aria-checked="false">
+                <label class="custom-control-label" for="customRadio2">Custom radio</label>
+              </div>
+              <div class="mt-3">
+
+                <div class="custom-control custom-radio d-inline mr-2">
+                  <input type="radio" id="customRadio3" value="3" name="customRadio" class="custom-control-input" checked aria-checked="true">
+                  <label class="custom-control-label" for="customRadio3">Custom radio</label>
+                </div>
+                <div class="custom-control custom-radio d-inline ">
+                  <input type="radio" id="customRadio4" value="4" name="customRadio" class="custom-control-input" aria-checked="false">
+                  <label class="custom-control-label " for="customRadio4">Custom radio</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="">Toggle Buttons</label>
+              <div>
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" checked>
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+
             <div class="form-group">
               <label for="exampleInputEmail1">Email address (large)</label>
               <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address (normal)</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address (small)</label>
-              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address (small, warn)</label>
-              <input type="email" class="form-control form-control-sm border-warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address (small, danger)</label>
-              <input type="email" class="form-control form-control-sm border-danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-              <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend bg-darkblue-400">
+                <svg class="icon icon-white ">
+                  <use xlink:href="css/main.svg#plus-icon"></use>
+                </svg>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
             </div>
 
-            <div class="form-group">
-              <label for="exampleInputEmail1">Text area (small)</label>
-              <textarea class="form-control form-control-sm" rows="4" placeholder="Please insert your input"></textarea>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">@example.com</span>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Text area (normal)</label>
-              <textarea class="form-control" rows="5" placeholder="Please insert your input"></textarea>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">$</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <div class="input-group-append">
+                <span class="input-group-text">.00</span>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Text area (large)</label>
-              <textarea class="form-control form-control-lg" rows="6" placeholder="Please insert your input"></textarea>
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">With textarea</span>
+              </div>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
             </div>
           </form>
         </div>

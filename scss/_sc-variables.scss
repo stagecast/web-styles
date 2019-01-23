@@ -74,3 +74,20 @@ $text-muted: $secondary;
 $btn-box-shadow: none;
 $btn-focus-width: 0;
 $btn-border-width: 0;
+//radio button 
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.99814%2016C12.8638%2016%2015.9963%2012.8653%2015.9963%209C15.9963%205.13471%2012.8638%202%208.99814%202C5.13247%202%202%205.13471%202%209C2%2012.8653%205.13247%2016%208.99814%2016Z%22%20fill%3D%22%23F68797%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+$custom-radio-indicator-icon-default: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.99814%2016C12.8638%2016%2015.9963%2012.8653%2015.9963%209C15.9963%205.13471%2012.8638%202%208.99814%202C5.13247%202%202%205.13471%202%209C2%2012.8653%205.13247%2016%208.99814%2016Z%22%20fill%3D%22%23354361%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+$custom-control-indicator-checked-bg: $white;
+$custom-control-indicator-size: 1.2rem;
+// $custom-select-padding-y: .475rem;
+// $custom-select-padding-x: .85rem;
+$custom-control-indicator-bg-size: 82% 82%;
+$custom-control-indicator-bg: #7C89A6;
+$custom-control-indicator-checked-box-shadow: none;
+$custom-control-indicator-focus-box-shadow: none;
+// $custom-control-indicator-checked-bg: #354361;
+// Toggle/switch
+$switch-active-bg-color: $darkblue-400;
+$switch-default-bg-color: $darkblue-400;
+$switch-button-active-bg-color: $green;
+$switch-button-default-bg-color: $red;

@@ -1,6 +1,6 @@
 # Bootstrap Theme Kit: Make your own Bootstrap Themes
 
-From the need to make CSS great again: https://github.com/stagecast/web-frontend#253
+From the need to make CSS great again: https://github.com/stagecast/web-frontend/issues/253
 
 This is simple starter project to help you get started quickly when making a custom Bootstrap theme.
 

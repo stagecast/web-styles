@@ -93,32 +93,40 @@
         </div>
       </div>
       <div class="row mt-3 ">
+        <!-- COLUMN 1 -->
         <div class="col-12 col-lg-4 col-md-6 ">
           <!-- Inputs-->
-          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Inputs</div>
+          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+            <h3>Standard Inputs</h3>
+          </div>
           <form action="" autocomplete="off">
 
+            <!-- Standard email Input (small) -->
             <div class="form-group">
-              <label for="exampleInputEmail1">Email name (large)</label>
-              <input type="text" class="form-control form-control-lg" placeholder="Enter name" autocomplete="name">
+              <label for="exampleInputEmail1">Email address (small)</label>
+              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address (large)</label>
-              <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
+            <!-- Standard email Input (normal) -->
 
             <div class="form-group">
               <label for="exampleInputEmail1">Email address (normal)</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
+            <!-- Standard email Input (large) -->
+
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address (small)</label>
-              <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <label for="exampleInputEmail1">Email name (large)</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Enter name" autocomplete="name">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
+
+            <!-- Colored inputs -->
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Colored Inputs</h3>
+            </div>
+
             <div class="form-group">
               <label for="exampleInputEmail1">Email address (small, warn)</label>
               <input type="email" class="form-control form-control-sm border-warning" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -129,7 +137,15 @@
               <input type="email" class="form-control form-control-sm border-danger" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-danger">We'll never share your email with anyone else.</small>
             </div>
-
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address (small, info)</label>
+              <input type="email" class="form-control form-control-sm border-info" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-info">We'll never share your email with anyone else.</small>
+            </div>
+            <!-- Text areas -->
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Text Areas</h3>
+            </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Text area (small)</label>
               <textarea class="form-control form-control-sm" rows="4" placeholder="Please insert your input"></textarea>
@@ -147,15 +163,18 @@
             </div>
           </form>
         </div>
+        <!-- COLUMN 2 -->
         <div class="col-12 col-lg-4 col-md-6 ">
           <!-- Inputs-->
-          <div class="text-white bg-darkblue-100 mt-4 mb-4 ">Other Inputs</div>
           <form action="" autocomplete="off">
 
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Drop Zone</h3>
+            </div>
             <!-- File Drop Component -->
             <div class="form-group">
 
-              <label for="dropFileInput">Drop file</label>
+              <label for="dropFileInput">Drop zone</label>
               <div class="dropzone-container dotted-border">
                 <div class="text-center pt-4 pb-4">
                   <svg class="icon icon-brightblue-100 d-block" style="width:100%; height: 50px">
@@ -165,6 +184,9 @@
                   </button>
                 </div>
               </div>
+            </div>
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Radio Buttons</h3>
             </div>
             <div class="form-group">
               <label>Radio Buttons</label>
@@ -188,6 +210,9 @@
                 </div>
               </div>
             </div>
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Toggle Buttons</h3>
+            </div>
 
             <div class="form-group">
               <label for="">Toggle Buttons</label>
@@ -204,44 +229,152 @@
                 </label>
               </div>
             </div>
+            <div class="text-white bg-darkblue-100 mt-4 mb-4 ">
+              <h3>Inputs with appended and prepended</h3>
+            </div>
+
+
+            <!-- Input with icon (2) -->
+            <div class="form-group form-control-bg-icon form-icon">
+              <label for="exampleInputEmail1">Icon (large) as backgorund image</label>
+              <input type="text" class="form-control form-control-lg search-icon" aria-describedby="emailHelp" placeholder="Enter query string" autocomplete="off">
+              <small id="emailHelp" class="form-text text-muted">It works only with black images...</small>
+            </div>
 
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address (large)</label>
-              <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
+              <label for="">Append text</label>
 
-            <div class="input-group mb-3">
-              <div class="input-group-prepend bg-darkblue-400">
-                <svg class="icon icon-white ">
-                  <use xlink:href="css/main.svg#plus-icon"></use>
-                </svg>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
               </div>
-              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-            </div>
+              <small id="emailHelp" class="form-text text-muted">Fix styles...</small>
 
-            <div class="input-group mb-3">
-              <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-              <div class="input-group-append">
-                <span class="input-group-text" id="basic-addon2">@example.com</span>
+            </div>
+            <!-- Prepend -->
+            <div class="form-group">
+              <label for="inputIcons2">Prepend icon</label>
+              <!-- input group small -->
+              <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#email-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control form-control-sm">
+              </div>
+              <!-- input group normal -->
+              <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#email-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control">
+              </div>
+              <!-- input group large -->
+              <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#email-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control form-control-lg">
               </div>
             </div>
-
-            <div class="input-group mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text">$</span>
+            <!-- Append -->
+            <div class="form-group">
+              <label for="inputIcons2">Append icon</label>
+              <!-- input group small -->
+              <div class="input-group mb-3">
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control form-control-sm has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white ">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-              <div class="input-group-append">
-                <span class="input-group-text">.00</span>
+              <!-- input group normal -->
+
+              <div class="input-group mb-3">
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white ">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <!-- input group large -->
+
+              <div class="input-group mb-3">
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control form-control-lg has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white ">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="form-group">
+              <label for="inputIcons2">Append a prepend icons</label>
+              <!-- input group -->
+              <div class="input-group mb-3">
 
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <span class="input-group-text">With textarea</span>
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#email-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons2" placeholder="Enter something" class="form-control has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white ">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
               </div>
-              <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="inputIcons2">Append a prepend icons (no .has-appended class)</label>
+
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="">Text Area with prepend</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">With textarea</span>
+                </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
             </div>
           </form>
         </div>

@@ -1,40 +1,24 @@
-.form-group label {
-  line-height: 21px;
-  font-size: 1em;
-  color: #FFFFFF;
-}
-
-.form-group small {
-  line-height: 19px;
-  font-size: 0.875em;
+.form-group {
+  label {
+    line-height: $line-height-base;
+    font-size: $font-size-base;
+    color: #FFFFFF;
+  }
+  small {
+    line-height: 0.9 * $line-height-base;
+    font-size: 0.875rem;
+  }
 }
 
 .form-control {
-  font-size: 1em;
+  font-size: $font-size-base;
+  background-clip: initial;
 }
 
 .form-control:hover {
-  background: $darkblue-500;
+  background-color: $darkblue-500;
 }
 
-// textarea {
-//   width: 100%;
-//   max-width: 551px;
-//   height: 80px;
-//   outline: none;
-//   padding: 15px;
-//   background: $darkblue-400;
-//   border-radius: $input-border-radius;
-//   border: 1px solid transparent;
-//   color: #FFFFFF;
-//   &:hover {
-//     background: $darkblue-500;
-//     border: 1px solid ;
-//   }
-//   &::placeholder {
-//     color: #7C89A6;
-//   }
-// }
 .custom-radio {
   .custom-control-label::before {
     background-image: $custom-radio-indicator-icon-default;
@@ -52,15 +36,12 @@
   display: inline-block;
   width: 60px;
   height: 34px;
-}
-
-
-/* Hide default HTML checkbox */
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  /* Hide default HTML checkbox */
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 
@@ -118,4 +99,18 @@ input:checked+.slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+$icons-map: ( 'email': 'email', 'search': 'search', 'upload': 'upload');
+.form-control-bg-icon {
+  --svg-color: #ffffff;
+  @each $key,
+  $name in $icons-map {
+    .#{$key}-icon {
+      background-image: url(svg/#{$key}-icon.svg);
+      background-position: 16px 16px;
+      background-repeat: no-repeat;
+      padding-left: 50px!important;
+    }
+  }
 }

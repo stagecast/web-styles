@@ -46,6 +46,13 @@ body {
   fill: red;
 }
 
-.icon {
+.icon,
+.form-icon,
+.input-group-icon {
   --svg-color: #ffffff;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
 }

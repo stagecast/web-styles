@@ -1,0 +1,83 @@
+.moment-card {
+  @extend .card;
+  background-clip: border-box;
+  border: none;
+  max-width: 14rem;
+  @include border-radius($card-border-radius);
+  .card-header {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    position: relative;
+  }
+  .card-body {
+    padding-bottom: 10px;
+    .card-text {
+      height: 4.5rem;
+      overflow: hidden;
+    }
+  }
+  .card-footer {
+    padding: 15px;
+    border-top: none;
+  }
+}
+
+.card-header {
+  .card-header-options {
+    position: absolute;
+    right: 10px;
+    bottom: -19px;
+    .card-option:not(:last-of-type) {
+      margin-right: 10px;
+    }
+  }
+}
+
+.card-option {
+  height: 35px;
+  width: 35px;
+  line-height: 1.8rem;
+  vertical-align: middle;
+  display: inline-block;
+  +.btn-group-vertical {
+    position: absolute;
+    display: none;
+  }
+  .icon {
+    height: 100%;
+    padding-right: 0;
+    // padding-left: 0;
+  }
+}
+
+.card-option-expandible:hover {
+  width: 7rem;
+  .card-option-text {
+    opacity: 1;
+    width: 100%;
+    display: inline;
+  }
+}
+
+.card-option-expandible {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  overflow: hidden;
+  // text-overflow: ellipsis;
+  white-space: nowrap;
+  .card-option-text {
+    -webkit-transition: all 0.5s ease-out;
+    /* Safari */
+    transition: all 0.5s ease-out;
+    width: 0;
+    opacity: 0;
+    display: none;
+  }
+}
+
+.card-option:focus+.btn-group-vertical {
+  display: block;
+  right: 10px;
+  top: 40px;
+}

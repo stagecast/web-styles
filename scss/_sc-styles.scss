@@ -15,18 +15,6 @@ body {
   }
 }
 
-// card additions
-.card-header {
-  .options {
-    position: absolute;
-    right: 20px;
-    .icon {
-      height: 30px;
-      width: 30px;
-    }
-  }
-}
-
 // Breadcrumbs 
 .breadcrumb-item {
   &.active {
@@ -60,6 +48,11 @@ body {
 .icon-md {
   width: 1.875rem;
   height: 1.875rem;
+}
+
+.icon-lg {
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .icon-xl {

@@ -90,18 +90,21 @@ $input-height-inner-sm: ($font-size-base * $input-line-height-sm)+($input-paddin
 // Custom control
 $custom-control-indicator-checked-bg: $white;
 $custom-control-indicator-size: 1.2rem;
-$custom-control-indicator-bg-size: 82% 82%;
+$custom-control-indicator-bg-size: cover;
 $custom-control-indicator-bg: #7C89A6;
+$custom-control-indicator-checked-disabled-bg:#7C89A620;
+$custom-control-indicator-disabled-bg: #7C89A620;
 $custom-control-indicator-checked-box-shadow: none;
 $custom-control-indicator-focus-box-shadow: none;
 // Radio button 
-$custom-radio-indicator-icon-checked: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.99814%2016C12.8638%2016%2015.9963%2012.8653%2015.9963%209C15.9963%205.13471%2012.8638%202%208.99814%202C5.13247%202%202%205.13471%202%209C2%2012.8653%205.13247%2016%208.99814%2016Z%22%20fill%3D%22%23F68797%22%2F%3E%0A%3C%2Fsvg%3E%0A");
-$custom-radio-indicator-icon-default: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M8.99814%2016C12.8638%2016%2015.9963%2012.8653%2015.9963%209C15.9963%205.13471%2012.8638%202%208.99814%202C5.13247%202%202%205.13471%202%209C2%2012.8653%205.13247%2016%208.99814%2016Z%22%20fill%3D%22%23354361%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8.99813%2014C11.7585%2014%2013.9963%2011.7614%2013.9963%209C13.9963%206.23858%2011.7585%204%208.99813%204C6.23774%204%204%206.23858%204%209C4%2011.7614%206.23774%2014%208.99813%2014Z%22%20fill%3D%22%23F68797%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+$custom-radio-indicator-icon-default: url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M8.99813%2014C11.7585%2014%2013.9963%2011.7614%2013.9963%209C13.9963%206.23858%2011.7585%204%208.99813%204C6.23774%204%204%206.23858%204%209C4%2011.7614%206.23774%2014%208.99813%2014Z%22%20fill%3D%22%23354361%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 // Toggle/switch (custom element)
-$switch-active-bg-color: $darkblue-400;
-$switch-default-bg-color: $darkblue-400;
-$switch-button-active-bg-color: $green;
-$switch-button-default-bg-color: $red;
+$switch-checked-bg-color: $darkblue-400;
+$switch-not-checked-bg-color: $darkblue-400;
+$switch-button-checked-bg-color: $green;
+$switch-button-default-bg-color: $brightblue-100;
+$switch-button-not-checked-bg-color: $red;
 
 /*
  * Alerts (override) 

@@ -24,7 +24,12 @@
     background-image: $custom-radio-indicator-icon-default;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: $custom-control-indicator-bg-size;
+    background-size: cover;
+  }
+  .custom-control-input:disabled {
+    &:checked~.custom-control-label::after {
+      opacity: 0.2;
+    }
   }
 }
 
@@ -54,7 +59,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: $switch-default-bg-color;
+  background-color: $switch-checked-bg-color;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -66,28 +71,35 @@
   width: 26px;
   left: 4px;
   bottom: 4px;
-  background-color: $switch-button-active-bg-color;
+  background-color: $switch-button-default-bg-color;
   -webkit-transition: .4s;
   transition: .4s;
 }
 
-input+.slider::before {
-  background-color: $switch-button-default-bg-color;
-}
-
-input:checked+.slider {
-  background-color: $switch-active-bg-color;
-}
-
-input:focus+.slider {
-  box-shadow: 0 0 1px $switch-active-bg-color;
+input:disabled+.slider:before,
+input:disabled+.slider:after {
+  opacity: 0.2;
 }
 
 input:checked+.slider:before {
-  background-color: $switch-button-active-bg-color;
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
+}
+
+.right-wrong {
+  input+.slider::before {
+    background-color: $switch-button-not-checked-bg-color;
+  }
+  input:checked+.slider {
+    background-color: $switch-checked-bg-color;
+  }
+  input:focus+.slider {
+    box-shadow: 0 0 1px $switch-checked-bg-color;
+  }
+  input:checked+.slider:before {
+    background-color: $switch-button-checked-bg-color;
+  }
 }
 
 
@@ -101,16 +113,16 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-$icons-map: ( 'email': 'email', 'search': 'search', 'upload': 'upload');
-.form-control-bg-icon {
-  --svg-color: #ffffff;
-  @each $key,
-  $name in $icons-map {
-    .#{$key}-icon {
-      background-image: url(svg/#{$key}-icon.svg);
-      background-position: 16px 16px;
-      background-repeat: no-repeat;
-      padding-left: 50px!important;
-    }
-  }
-}
+// $icons-map: ( 'email': 'email', 'search': 'search', 'upload': 'upload');
+// .form-control-bg-icon {
+//   --svg-color: #ffffff;
+//   @each $key,
+//   $name in $icons-map {
+//     .#{$key}-icon {
+//       background-image: url(svg/#{$key}-icon.svg);
+//       background-position: 16px 16px;
+//       background-repeat: no-repeat;
+//       padding-left: 50px!important;
+//     }
+//   }
+// }

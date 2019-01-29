@@ -52,11 +52,21 @@ $coral-hover: #FB9293;
 $green-hover: #59C59E;
 $red-hover: #F17C7C;
 $yellow-hover: #EEC868;
-$darkblue-hover: #242E42;
+$darkblue-100-hover: $darkblue-200;
+$darkblue-200-hover: $darkblue-300;
+$darkblue-300-hover: $darkblue-400;
+$darkblue-400-hover: $darkblue-500;
+$darkblue-500-hover: $darkblue-600;
+$darkblue-600-hover: $darkblue-700;
+$darkblue-700-hover: $darkblue-800;
 $brightblue-hover: #8F9EBF;
-$hover-map: ( 'purple': $purple-hover, 'coral': $coral-hover, 'green': $green-hover, 'red': $red-hover, 'yellow': $yellow-hover);
+$hover-theme: ('danger': $red-hover, 'info': $purple-hover, 'success': $green-hover, 'warning': $yellow-hover, 'primary': $darkblue-100-hover, 'secondary': $brightblue-hover, 'coral': $coral-hover);
+$hover-shades: ('darkblue-100':$darkblue-100-hover, 'darkblue-200': $darkblue-200-hover, 'darkblue-300': $darkblue-300-hover, 'darkblue-400': $darkblue-400-hover, 'darkblue-500': $darkblue-500-hover, 'darkblue-600': $darkblue-600-hover, 'darkblue-700': $darkblue-700-hover);
+$hover-colors: ( 'purple': $purple-hover, 'coral': $coral-hover, 'green': $green-hover, 'red': $red-hover, 'yellow': $yellow-hover);
+$hover-palette: map-merge($hover-theme, $hover-colors);
+$hover-palette: map-merge($hover-shades, $hover-palette);
 @each $color,
-$value in $hover-map {
+$value in $hover-palette {
   .#{$color}-hover {
     background-color: $value
   }

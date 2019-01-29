@@ -1,6 +1,5 @@
-$hover-pallete: ('danger': $red-hover, 'info': $purple-hover, 'success': $green-hover, 'warning': $yellow-hover, 'primary': $darkblue-hover, 'secondary': $brightblue-hover, 'coral': $coral-hover);
 @each $color,
-$value in $hover-pallete {
+$value in $hover-palette {
   .btn-#{$color}:hover {
     background: $value;
   }

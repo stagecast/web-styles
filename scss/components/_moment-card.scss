@@ -1,8 +1,10 @@
 .moment-card {
+  // extends bootstrap card
   @extend .card;
   background-clip: border-box;
   border: none;
-  max-width: 14rem;
+  //   max-width: 14rem;
+  width: 14rem;
   @include border-radius($card-border-radius);
   .card-header {
     padding-top: 0;
@@ -28,8 +30,8 @@
     position: absolute;
     right: 10px;
     bottom: -19px;
-    .card-option:not(:last-of-type) {
-      margin-right: 10px;
+    .card-option {
+      margin-left: 10px;
     }
   }
 }

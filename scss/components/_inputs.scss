@@ -20,6 +20,9 @@
 }
 
 .custom-radio {
+  .custom-control-label {
+    cursor: pointer;
+  }
   .custom-control-label::before {
     background-image: $custom-radio-indicator-icon-default;
     background-repeat: no-repeat;

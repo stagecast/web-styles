@@ -1,0 +1,9 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5.88672" y="14.1615" width="13.0261" height="0.608696" rx="0.304348" fill="var(--svg-color)"/>
+<rect x="6" y="5" width="13" height="15" rx="0.730435" stroke="var(--svg-color)" stroke-width="0.608696"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M9.6749 8.73755L5.83111 14.5851C5.80795 14.6203 5.78719 14.6972 5.76758 14.6972H15.7841C15.7689 14.6972 15.7531 14.643 15.7362 14.6194L11.525 8.70705C11.0025 7.97378 10.1699 7.98542 9.6749 8.73755" fill="var(--svg-color)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M18.953 14.6482V14.495L17.0038 11.7008C16.7333 11.3214 16.3209 11.3383 16.0647 11.7274L14.168 14.6482H18.953Z" fill="var(--svg-color)"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16.1436 7.98183C16.1436 8.54897 15.6839 9.00871 15.1167 9.00871C14.5496 9.00871 14.0898 8.54897 14.0898 7.98183C14.0898 7.41469 14.5496 6.95496 15.1167 6.95496C15.6839 6.95496 16.1436 7.41469 16.1436 7.98183" fill="var(--svg-color)"/>
+<rect x="7.34961" y="16" width="7.66957" height="0.608696" rx="0.304348" fill="var(--svg-color)"/>
+<rect x="7.34961" y="17.7" width="5.11304" height="0.608696" rx="0.304348" fill="var(--svg-color)"/>
+</svg>

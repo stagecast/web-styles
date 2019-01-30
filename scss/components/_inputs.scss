@@ -1,11 +1,13 @@
 .form-group {
   label {
     line-height: $line-height-base;
+    font-weight: $font-weight-semibold;
     font-size: $font-size-base;
     color: #FFFFFF;
   }
   small {
     line-height: 0.9 * $line-height-base;
+    font-weight: $font-weight-semibold;
     font-size: 0.875rem;
   }
 }

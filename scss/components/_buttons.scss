@@ -10,7 +10,7 @@ $active-pallete: ('danger': $red-active, 'info': $purple-active, 'success': $gre
 $value in $active-pallete {
   .btn-#{$color}:focus,
   .btn-#{$color}:active {
-    background-color: $value;
+    background-color: $value!important;
   }
 }
 
@@ -21,7 +21,7 @@ $value in $active-pallete {
 .btn {
   .icon {
     float: left;
-    height: $btn-padding-y + 0.25 + $font-size-base;
+    height: $btn-padding-y + $font-size-base;
     padding: 0 0.15rem;
   }
 }
@@ -29,7 +29,7 @@ $value in $active-pallete {
 .btn-sm {
   .icon {
     float: left;
-    height: $btn-padding-y-sm + 0.25 + $font-size-sm;
+    height: $btn-padding-y-sm + $font-size-sm;
     padding: 0 0.2rem;
   }
 }
@@ -37,7 +37,7 @@ $value in $active-pallete {
 .btn-lg {
   .icon {
     float: left;
-    height: $btn-padding-y-lg + 0.25 + $font-size-lg;
+    height: $btn-padding-y-lg + $font-size-lg - 0.3;
     padding: 0 0.1rem;
   }
 }

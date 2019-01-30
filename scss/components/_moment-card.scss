@@ -64,15 +64,15 @@
 }
 
 .card-option-expandible {
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
   overflow: hidden;
   // text-overflow: ellipsis;
   white-space: nowrap;
   .card-option-text {
-    -webkit-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.3s ease-out;
     /* Safari */
-    transition: all 0.5s ease-out;
+    transition: all 0.3s ease-out;
     width: 0;
     opacity: 0;
     display: none;

@@ -2,7 +2,7 @@
  * Company Font
  */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
 
 /*
  * Theme Colors (override)
@@ -22,8 +22,10 @@ $white: #ffffff;
  * Base variables (override)
  */
 
+$font-weight-semibold: 600;
 $line-height-base: 1.5;
 $font-size-base: 1rem;
+$font-size-lg: ($font-size-base * 1.3125);
 $font-family-sans-serif: "Source Sans Pro",
 Helvetica,
 Arial,
@@ -89,12 +91,21 @@ $input-line-height-sm: 1.3125;
 $input-height-inner-sm: ($font-size-base * $input-line-height-sm)+($input-padding-y-sm * 2);
 
 /*
+ * Buttons 
+ */
+
+$input-btn-padding-y: .525rem !default;
+$input-btn-padding-y-sm: .45rem !default;
+$input-btn-padding-y-lg: 0.925rem !default;
+$btn-font-weight: $font-weight-semibold;
+
+/*
  * Custom Inputs 
  */
 
 // Custom control
 $custom-control-indicator-checked-bg: $white;
-$custom-control-indicator-size: 1.2rem;
+$custom-control-indicator-size: 1.25rem;
 $custom-control-indicator-bg-size: cover;
 $custom-control-indicator-bg: #7C89A6;
 $custom-control-indicator-checked-disabled-bg:#7C89A620;

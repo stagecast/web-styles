@@ -1,89 +1,85 @@
-
 @mixin text-style {
-    font-style: normal;
-    font-weight: normal;
-    font-family: $font-family-sans-serif;
-    color: $white;
-    font-size: 16px;
+  font-style: normal;
+  font-weight: $font-weight-semibold;
+  font-family: $font-family-sans-serif;
+  color: $white;
+  font-size: $font-size-base;
 }
 
 h1 {
-    @include text-style();
-    line-height: 51px;
-    font-size: 2.5em;
+  @include text-style();
+  line-height: 51px;
+  font-size: 2.5em;
 }
 
 h2 {
-    @include text-style();
-    line-height: 36px;
-    font-size: 1.75em;
+  @include text-style();
+  line-height: 36px;
+  font-size: 1.75em;
 }
 
 h3 {
-    @include text-style();
-    line-height: 31px;
-    font-size: 1.5em;
+  @include text-style();
+  line-height: 31px;
+  font-size: 1.5em;
 }
 
 h4 {
-    @include text-style();
-    line-height: 32px;
-    font-size: 1.25em;
+  @include text-style();
+  line-height: 32px;
+  font-size: 1.25em;
 }
 
 h5 {
-    @include text-style();
-    line-height: 27px;
-    font-size: 1.125em;
+  @include text-style();
+  line-height: 27px;
+  font-size: 1.125em;
 }
 
 h6 {
-    @include text-style();
-    line-height: 19px;
-    font-size: 0.875em;
+  @include text-style();
+  line-height: 19px;
+  font-size: 0.875em;
 }
 
 // normal text
-
 .text-xs {
-    @include text-style();
-    font-size: 0.75em;
-    
+  @include text-style();
+  font-size: 0.75em;
 }
 
 .text-sm {
-    @include text-style();
-    font-size: 0.8125em;
+  @include text-style();
+  font-size: 0.8125em;
 }
 
 .text-md {
-    @include text-style();
-    font-size: 0.875em;
+  @include text-style();
+  font-size: 0.875em;
 }
 
 .text-lg {
-    @include text-style();
-    font-size: 1em;
+  @include text-style();
+  font-size: 1em;
 }
 
 // semibold text
-
 .text-xs-semibold {
-    @extend .text-xs ;
-    font-weight: 600;
+  @extend .text-xs;
+  font-weight: $font-weight-semibold;
 }
 
 .text-sm-semibold {
-    @extend .text-sm ;
-    font-weight: 600;
+  @extend .text-sm;
+  font-weight: $font-weight-semibold;
 }
 
 .text-md-semibold {
-    @extend .text-md ;
-    font-weight: 600;
+  @extend .text-md;
+  font-weight: $font-weight-semibold;
 }
 
 .text-lg-semibold {
-    @extend .text-lg ;
-    font-weight: 600;
+  @extend .text-lg;
+  font-weight: $font-weight-semibold;
 }

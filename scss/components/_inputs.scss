@@ -12,6 +12,13 @@
   }
 }
 
+.custom-select.is-invalid+.form-text,
+.form-control.is-invalid+.form-text,
+.was-validated .custom-select:invalid+.form-text,
+.was-validated .form-control:invalid+.form-text {
+  color: $form-feedback-invalid-color!important;
+}
+
 .form-control,
 .input-group>.form-control {
   font-size: $font-size-base;

@@ -15,31 +15,41 @@
   }
 }
 
+.input-group-text {
+  border: $input-border-width solid $input-group-addon-border-color;
+}
+
 .input-group {
-  .input-group-prepend>.input-group-icon {
+  .input-group-prepend>.input-group-icon,
+  .input-group-prepend>.input-group-text {
     border-right: 0;
   }
-  .input-group-append>.input-group-icon {
+  .input-group-append>.input-group-icon,
+  .input-group-append>.input-group-text {
     border-left: 0;
   }
 }
 
 .input-group:hover {
-  .input-group-prepend>.input-group-icon {
+  .input-group-prepend>.input-group-icon,
+  .input-group-prepend>.input-group-text {
     background-color: $darkblue-500;
   }
-  .input-group-append>.input-group-icon {
+  .input-group-append>.input-group-icon,
+  .input-group-append>.input-group-text {
     background-color: $darkblue-500;
   }
 }
 
 .input-group:focus-within {
-  .input-group-prepend>.input-group-icon {
+  .input-group-prepend>.input-group-icon,
+  .input-group-prepend>.input-group-text {
     background-color: $darkblue-500;
     border: $input-border-width solid $input-focus-border-color;
     border-right: 0;
   }
-  .input-group-append>.input-group-icon {
+  .input-group-append>.input-group-icon,
+  .input-group-append>.input-group-text {
     background-color: $darkblue-500;
     border: $input-border-width solid $input-focus-border-color;
     border-left: 0;
@@ -61,7 +71,9 @@
 // Remix the default form control sizing classes into new ones for easier
 // manipulation.
 .input-group-lg>.input-group-prepend>.input-group-icon,
-.input-group-lg>.input-group-append>.input-group-icon {
+.input-group-lg>.input-group-append>.input-group-icon,
+.input-group-lg>.input-group-prepend>.input-group-text,
+.input-group-lg>.input-group-append>.input-group-text {
   height: $input-height-lg;
   padding: $input-padding-y-lg $input-padding-x-lg;
   font-size: $font-size-lg;
@@ -70,7 +82,9 @@
 }
 
 .input-group-sm>.input-group-prepend>.input-group-icon,
-.input-group-sm>.input-group-append>.input-group-icon {
+.input-group-sm>.input-group-append>.input-group-icon,
+.input-group-sm>.input-group-prepend>.input-group-text,
+.input-group-sm>.input-group-append>.input-group-text {
   height: $input-height-sm;
   padding: $input-padding-y-sm $input-padding-x-sm;
   font-size: $font-size-sm;

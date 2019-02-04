@@ -300,20 +300,44 @@
             </div>
 
             <div class="form-group mb-3">
-              <label for="">Append text</label>
+              <label for="">Prepend text</label>
+              <div class="input-group input-group-sm">
+                <div class="input-group-prepend mb-3">
+                  <span class="input-group-text" id="basic-addon2">My name is: </span>
+                </div>
+                <input type="text" class="form-control form-control-sm" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
               <div class="input-group">
-                <div class="input-group-prepend">
+                <div class="input-group-prepend mb-3">
                   <span class="input-group-text" id="basic-addon2">My name is: </span>
                 </div>
                 <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              </div>
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon2">My name is: </span>
+                </div>
+                <input type="text" class="form-control form-control-lg" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
               </div>
               <small id="emailHelp" class="form-text text-muted">Input info text. You can write anything.</small>
             </div>
 
             <div class="form-group mb-3">
-              <label for="">Prepend text</label>
-              <div class="input-group ">
-                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <label for="">Append text</label>
+              <div class="input-group input-group-sm mb-3">
+                <input type="text" class="form-control form-control-sm has-appended" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control has-appended" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+              </div>
+              <div class="input-group input-group-lg">
+                <input type="text" class="form-control form-control-lg has-appended" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                   <span class="input-group-text" id="basic-addon2">@example.com</span>
                 </div>
@@ -472,6 +496,60 @@
               </div>
             </div>
             <div class="form-group">
+              <label for="inputIcons26">Append a prepend anything</label>
+              <!-- input group -->
+              <div class="input-group input-group-sm mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons26" placeholder="Search something..." class="form-control form-control-sm has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="">1/3</span>
+                  </div>
+                </div>
+              </div>
+              <!-- input group -->
+              <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons26" placeholder="Search something..." class="form-control has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="">1/3</span>
+                  </div>
+                </div>
+              </div>
+              <!-- input group -->
+              <div class="input-group input-group-lg mb-3">
+
+                <div class="input-group-prepend">
+                  <div class="input-group-icon">
+                    <svg class="icon icon-white">
+                      <use xlink:href="css/main.svg#search-icon"></use>
+                    </svg>
+                  </div>
+                </div>
+                <input type="text" name="inputIcons26" placeholder="Search something..." class="form-control form-control-lg has-appended">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="">1/3</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
               <label for="inputIcons2">Append a prepend icons (no .has-appended class)</label>
 
               <div class="input-group mb-3">
@@ -536,6 +614,15 @@
             <button type="button" class="btn btn-warning mt-2" disabled>Warning</button>
             <button type="button" class="btn btn-danger mt-2" disabled>Danger</button>
             <button type="button" class="btn btn-info mt-2" disabled> Info</button>
+          </div>
+          <div class="text-white mt-4 mb-4 ">Link Buttons</div>
+          <div>
+            <button type="button" class="btn btn-outline-primary text-underline mt-2">Primary</button>
+            <button type="button" class="btn btn-outline-secondary text-underline mt-2">Secondary</button>
+            <button type="button" class="btn btn-outline-success text-underline mt-2">Success</button>
+            <button type="button" class="btn btn-outline-warning text-underline mt-2">Warning</button>
+            <button type="button" class="btn btn-outline-danger text-underline mt-2">Danger</button>
+            <button type="button" class="btn btn-outline-info text-underline mt-2"> Info</button>
           </div>
           <div class="text-white mt-4 mb-4 ">With Color Scales</div>
           <div>

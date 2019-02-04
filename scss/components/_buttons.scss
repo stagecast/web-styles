@@ -1,6 +1,6 @@
 @each $color,
 $value in $hover-palette {
-  .btn-#{$color}:hover {
+  .btn-#{$color}:not(:disabled):hover {
     background: $value;
   }
 }

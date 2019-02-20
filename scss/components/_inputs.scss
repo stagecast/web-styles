@@ -126,16 +126,81 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-// $icons-map: ( 'email': 'email', 'search': 'search', 'upload': 'upload');
-// .form-control-bg-icon {
-//   --svg-color: #ffffff;
-//   @each $key,
-//   $name in $icons-map {
-//     .#{$key}-icon {
-//       background-image: url(svg/#{$key}-icon.svg);
-//       background-position: 16px 16px;
-//       background-repeat: no-repeat;
-//       padding-left: 50px!important;
-//     }
-//   }
-// }
+.custom-checkbox {
+  min-height: $custom-checkbox-indicator-size + 4;
+  .custom-control-input~.custom-control-label {
+    padding-left: $custom-checkbox-indicator-size / 2;
+    line-height: $custom-checkbox-indicator-size;
+    &::before {
+      width: $custom-checkbox-indicator-size;
+      height: $custom-checkbox-indicator-size;
+      background-color: $custom-checkbox-indicator-bg;
+    }
+    &::after {
+      width: $custom-checkbox-indicator-size;
+      height: $custom-checkbox-indicator-size;
+    }
+  }
+  .custom-control-input:checked~.custom-control-label {
+    &::before {
+      background-color: $custom-checkbox-indicator-checked-bg;
+    }
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-checked;
+      background-size: 60%;
+    }
+  }
+  .custom-control-input:indeterminate~.custom-control-label {
+    &::before {
+      background-color: $custom-checkbox-indicator-checked-bg;
+      box-shadow: none;
+    }
+    &::after {
+      background-image: $custom-checkbox-indicator-icon-indeterminate;
+      background-size: 60%;
+    }
+  }
+  .custom-control-input:disabled~.custom-control-label {
+    opacity: 0.2!important;
+  }
+  .custom-control-input:disabled {
+    &:checked~.custom-control-label::before {
+      background-color: $custom-checkbox-indicator-checked-bg;
+    }
+    &:indeterminate~.custom-control-label::before {
+      background-color: $green;
+    }
+  }
+}
+
+.custom-checkbox-sm {
+  min-height: $custom-checkbox-indicator-size-sm + 4;
+  .custom-control-input~.custom-control-label {
+    padding-left: $custom-checkbox-indicator-size-sm / 2;
+    line-height: $custom-checkbox-indicator-size-sm;
+    &::before {
+      width: $custom-checkbox-indicator-size-sm;
+      height: $custom-checkbox-indicator-size-sm;
+    }
+    &::after {
+      width: $custom-checkbox-indicator-size-sm;
+      height: $custom-checkbox-indicator-size-sm;
+    }
+  }
+}
+
+.custom-checkbox-lg {
+  min-height: $custom-checkbox-indicator-size-lg + 4;
+  .custom-control-input~.custom-control-label {
+    padding-left: $custom-checkbox-indicator-size-lg;
+    line-height: $custom-checkbox-indicator-size-lg;
+    &::before {
+      width: $custom-checkbox-indicator-size-lg;
+      height: $custom-checkbox-indicator-size-lg;
+    }
+    &::after {
+      width: $custom-checkbox-indicator-size-lg;
+      height: $custom-checkbox-indicator-size-lg;
+    }
+  }
+}

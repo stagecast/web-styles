@@ -11,9 +11,11 @@
     <!-- <link rel="stylesheet" href="css/icons/css/sprite.css"> -->
     <link rel="stylesheet" href="../css/stagecast.min.css">
     <style>
-        /* .media {
-            flex-basis: 30%;
-        } */
+        .media:hover, .media:focus {
+            /* flex-basis: 30%; */
+            background-color: #29334A;
+            transition: background-color 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
         .card-img-top {
             overflow: hidden;
         }
@@ -151,18 +153,18 @@
                 <div class="col-12 pt-3 main-content">
                     <!--Breadcrumb-->
                     <nav aria-label="breadcrumb" role="navigation">
-                        <ol class="breadcrumb small mt-2 bg-darkblue-200 text-white">
+                        <ol class="breadcrumb small mt-2 bg-darkblue-200 pl-0 text-white">
                             <li class="breadcrumb-item"><a href="# " class="text-secondary">Moment Store</a></li>
                             <li class="breadcrumb-item"><a href="# " class="text-secondary">Concerts</a></li>
                         </ol>
                     </nav>
                     <h1>Moment Store</h1>
-                    <h2 class="text-secondary h4 mb-5">Tools to create ineractive live experiences</h2>
+                    <h2 class="text-secondary h4 mb-5">Tools to create interactive live experiences</h2>
                     <div class="section mt-3 mb-3">
                         <div class="mb-5">
                             <div class="d-flex justify-content-between">
                                 <h3 class="text-white h5 font-weight-semibold">Moment Bundles</h3>
-                                <a class="text-secondary">See all
+                                <a href="#" class="text-secondary">See all
                                     <svg class="icon icon-brightblue">
                                         <use xlink:href="../css/main.svg#right-chevron-icon"></use>
                                     </svg>
@@ -174,7 +176,7 @@
                             </p>
                         </div>
                         <div class="card-deck">
-                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                            <div class="card bg-darkblue-300 transition-3d-hover" style="width: 18rem;">
                                 <div class="card-img-top">
                                     <img src="https://assets.visitphilly.com/wp-content/uploads/2018/06/festival-pier-penns-landing-new-crtsy-festival-pier-2200x1237px.jpg"
                                         alt="Card image cap">
@@ -183,7 +185,7 @@
                                     <p class="card-text text-white">Show Bundle</p>
                                 </div>
                             </div>
-                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                            <div class="card bg-darkblue-300 transition-3d-hover" style="width: 18rem;">
                                 <div class="card-img-top">
                                     <img src="https://i.ytimg.com/vi/JwIy-8zATgU/maxresdefault.jpg" alt="Card image cap">
                                 </div>
@@ -191,7 +193,7 @@
                                     <p class="card-text text-white">Sports Bundle</p>
                                 </div>
                             </div>
-                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                            <div class="card bg-darkblue-300 transition-3d-hover" style="width: 18rem;">
                                 <div class="card-img-top">
                                     <img src="https://image.redbull.com/rbcom/010/2013-10-05/1331614343538_4/0100/0/1/league-of-legfaker-of-skt-t1-atlol-world-championship-at-the-staples-center-lol-world-championshipends-world-championships.jpg"
                                         alt="Card image cap">
@@ -206,18 +208,18 @@
                         <div class="mb-5">
                             <div class="d-flex justify-content-between">
                                 <h3 class="text-white h5 font-weight-semibold">Recently Used</h3>
-                                <span class="text-secondary">See all
+                                <a href="#" class="text-secondary">See all
                                     <svg class="icon icon-brightblue">
                                         <use xlink:href="../css/main.svg#right-chevron-icon"></use>
                                     </svg>
-                                </span>
+                                </a>
                             </div>
                             <p class="text-secondary">
                                 Here are the Moments you latest have used.
                             </p>
                         </div>
                         <div class="media-container row flex-wrap justify-content-between">
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--ideation-box"></use>
@@ -231,7 +233,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--flash-box"></use>
@@ -245,7 +247,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--voting-box"></use>
@@ -260,7 +262,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--article-box"></use>
@@ -279,18 +281,18 @@
                         <div class="mb-5">
                             <div class="d-flex justify-content-between">
                                 <h3 class="text-white h5 font-weight-semibold">New In</h3>
-                                <span class="text-secondary">See all
+                                <a href="#" class="text-secondary">See all
                                     <svg class="icon icon-brightblue">
                                         <use xlink:href="../css/main.svg#right-chevron-icon"></use>
                                     </svg>
-                                </span>
+                                </a>
                             </div>
                             <p class="text-secondary">
                                 See the latest releases of Moments.
                             </p>
                         </div>
                         <div class="media-container row flex-wrap justify-content-between">
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--ideation-box"></use>
@@ -307,7 +309,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--flash-box"></use>
@@ -324,7 +326,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--voting-box"></use>
@@ -341,7 +343,7 @@
                                         ideate Let people ideate Let people ideate Let people ideate </p>
                                 </div>
                             </div>
-                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                            <div class="media mb-3 mr-3 col-12 col-xl-5 p-3 rounded transition-3d-hover">
                                 <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
                                     <svg class="icon icon-white">
                                         <use xlink:href="../css/main.svg#moments--article-box"></use>

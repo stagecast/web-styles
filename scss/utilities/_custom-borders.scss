@@ -1,6 +1,6 @@
 @for $i from 1 through 10 {
   .rounded-#{$i} {
-    border-radius: unquote( $i * 10 + 'em');
+    @include border-radius($i * 10 + 'rem');
   }
 }
 

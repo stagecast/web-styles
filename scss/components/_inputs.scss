@@ -73,8 +73,8 @@
   right: 0;
   bottom: 0;
   background-color: $switch-checked-bg-color;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 .slider:before {
@@ -85,8 +85,8 @@
   left: 4px;
   bottom: 4px;
   background-color: $switch-button-default-bg-color;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 input:disabled+.slider:before,

@@ -1,0 +1,19 @@
+// Navbar
+.navbar-dark {
+  .navbar-nav {
+    .nav-item {
+      @include hover-focus {
+        background-color: $navbar-dark-hover-bg;
+      }
+      // padding-top: 1rem; 
+      // padding-bottom: 1rem;
+      padding: 1rem;
+      text-align: center;
+      min-width: 90px;
+      &.active {
+        border-bottom: 4px solid $red;
+        background: lighten($primary, 10%)
+      }
+    }
+  }
+}

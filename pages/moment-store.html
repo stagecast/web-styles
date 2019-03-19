@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Theme Kit</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Custom built theme - This already includes Bootstrap 4 -->
+    <!-- <link rel="stylesheet" href="css/icons/css/sprite.css"> -->
+    <link rel="stylesheet" href="../css/stagecast.min.css">
+    <style>
+        /* .media {
+            flex-basis: 30%;
+        } */
+        .card-img-top {
+            overflow: hidden;
+        }
+        .card-img-top img {
+            height: 300px; 
+            width:100%;
+            object-fit: cover;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 4.5rem;
+            width: 17rem;
+            height: 100%;
+            padding-top: 2rem;
+            z-index: 100;
+        }
+
+        .main-content {
+            padding-right: 4rem;
+            padding-left: 21rem;
+        }
+    </style>
+</head>
+
+<body class="bg-darkblue-200">
+    <header class="navbar navbar-expand-lg navbar-dark bg-darkblue-300 pt-lg-0 pb-lg-0 fixed-top">
+        <a class="navbar-brand" href="#!"><img src="../css/imgs/logo-beta.svg" alt="Stagecast"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#!">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown active">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-success">New</span>
+                        Pages
+                    </a>
+                    <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="./pages/colors.html">Colors</a>
+                        <a class="dropdown-item text-white" href="./pages/forms.html">Forms</a>
+                        <a class="dropdown-item text-white" href="./pages/icons.html">Icons</a>
+                        <a class="dropdown-item text-white" href="./pages/components.html">Misc Components</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white active" href="./pages/colors.html">Moment Store</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse order-2 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg"
+                            alt="AB">
+                        <div class="text-left">
+                            <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+                                Smith</span>
+                            <span class="small d-block text-white ">Organiser</span>
+                        </div>
+                    </div>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="#">Action</a>
+                        <a class="dropdown-item text-white" href="#">Another action</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white" href="#">Something else here</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./documentation/index.html">
+                        Docs
+                    </a>
+                </li>
+                <!-- <li class="nav-item ">
+          <a class="nav-link mt-3" href="# ">Link</a>
+        </li> -->
+            </ul>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="bg-darkblue-100 p-4 sidebar">
+                    <div class="input-group mb-5">
+                        <div class="input-group-prepend">
+                            <div class="input-group-icon">
+                                <svg class="icon icon-white">
+                                    <use xlink:href="../css/main.svg#search-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <input type="text" name="inputIcons2" placeholder="Search..." class="form-control">
+                    </div>
+                    <div class="section mb-5">
+                        <h3>Staff Picks</h3>
+                        <ul class="text-white list-unstyled">
+                            <li class="mb-2"><a class="text-secondary" href="#">Moment Bundle</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Recently Used</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">New In</a></li>
+                        </ul>
+                    </div>
+                    <div class="section mb-5">
+                        <h3>Categories</h3>
+                        <ul class="text-white list-unstyled">
+                            <li class="mb-2"><a class="text-secondary" href="#">All</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Utilities</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Crowd Games</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Marketing</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Special Effects</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Second Screen</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>Filters</h3>
+                        <div>
+                            <span class="badge badge-info">Free</span>
+                            <span class="badge badge-success">New</span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-3 main-content">
+                    <!--Breadcrumb-->
+                    <nav aria-label="breadcrumb" role="navigation">
+                        <ol class="breadcrumb small mt-2 bg-darkblue-200 text-white">
+                            <li class="breadcrumb-item"><a href="# " class="text-secondary">Moment Store</a></li>
+                            <li class="breadcrumb-item"><a href="# " class="text-secondary">Concerts</a></li>
+                        </ol>
+                    </nav>
+                    <h1>Moment Store</h1>
+                    <h2 class="text-secondary h4 mb-5">Tools to create ineractive live experiences</h2>
+                    <div class="section mt-3 mb-3">
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white h5 font-weight-semibold">Moment Bundles</h3>
+                                <a class="text-secondary">See all
+                                    <svg class="icon icon-brightblue">
+                                        <use xlink:href="../css/main.svg#right-chevron-icon"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="text-secondary">
+                                We know what Moment suits to certain type of events. If you have a similar show please
+                                click them and see what we suggest.
+                            </p>
+                        </div>
+                        <div class="card-deck">
+                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                                <div class="card-img-top">
+                                    <img src="https://assets.visitphilly.com/wp-content/uploads/2018/06/festival-pier-penns-landing-new-crtsy-festival-pier-2200x1237px.jpg"
+                                        alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-white">Show Bundle</p>
+                                </div>
+                            </div>
+                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                                <div class="card-img-top">
+                                    <img src="https://i.ytimg.com/vi/JwIy-8zATgU/maxresdefault.jpg" alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-white">Sports Bundle</p>
+                                </div>
+                            </div>
+                            <div class="card bg-darkblue-300" style="width: 18rem;">
+                                <div class="card-img-top">
+                                    <img src="https://image.redbull.com/rbcom/010/2013-10-05/1331614343538_4/0100/0/1/league-of-legfaker-of-skt-t1-atlol-world-championship-at-the-staples-center-lol-world-championshipends-world-championships.jpg"
+                                        alt="Card image cap">
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text text-white">E-Sports Bundle</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section mt-5 mb-3">
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white h5 font-weight-semibold">Recently Used</h3>
+                                <span class="text-secondary">See all
+                                    <svg class="icon icon-brightblue">
+                                        <use xlink:href="../css/main.svg#right-chevron-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="text-secondary">
+                                Here are the Moments you latest have used.
+                            </p>
+                        </div>
+                        <div class="media-container row flex-wrap justify-content-between">
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--ideation-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Ideation Moment <span class="badge badge-info ml-3">Free</span></h5>
+                                    <div class="mb-3"><span class="text-coral">Crowd Games</span>/<span class="text-coral">Marketing
+                                        </span>/<span class="text-coral">Special Effects</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--flash-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Flash Moment <span class="badge badge-info ml-3">Free</span></h5>
+                                    <div class="mb-3"><span class="text-coral">Marketing</span>/<span class="text-coral">Crowd
+                                            Games</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--voting-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Voting Moment <span class="badge badge-info ml-3">Free</span></h5>
+                                    <div class="mb-3"><span class="text-coral">Second Screen</span>/<span class="text-coral">Special
+                                            Effects
+                                        </span>/<span class="text-coral">Crowd Games</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--article-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Article Moment <span class="badge badge-info ml-3">Free</span></h5>
+                                    <div class="mb-3"><span class="text-coral">Marketing</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section mt-5 mb-3">
+                        <div class="mb-5">
+                            <div class="d-flex justify-content-between">
+                                <h3 class="text-white h5 font-weight-semibold">New In</h3>
+                                <span class="text-secondary">See all
+                                    <svg class="icon icon-brightblue">
+                                        <use xlink:href="../css/main.svg#right-chevron-icon"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <p class="text-secondary">
+                                See the latest releases of Moments.
+                            </p>
+                        </div>
+                        <div class="media-container row flex-wrap justify-content-between">
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--ideation-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Ideation Moment
+                                        <span class="badge badge-info ml-3">Free</span>
+                                        <span class="badge badge-success">New</span>
+                                    </h5>
+                                    <div class="mb-3"><span class="text-coral">Crowd Games</span>/<span class="text-coral">Marketing
+                                        </span>/<span class="text-coral">Special Effects</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--flash-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Flash Moment
+                                        <span class="badge badge-info ml-3">Free</span>
+                                        <span class="badge badge-success">New</span>
+                                    </h5>
+                                    <div class="mb-3"><span class="text-coral">Marketing</span>/<span class="text-coral">Crowd
+                                            Games</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--voting-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Voting Moment <span class="badge badge-info ml-3">Free</span>
+                                        <span class="badge badge-success">New</span>
+                                    </h5>
+                                    <div class="mb-3"><span class="text-coral">Second Screen</span>/<span class="text-coral">Special
+                                            Effects
+                                        </span>/<span class="text-coral">Crowd Games</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                            <div class="media pb-3 pr-3 col-12 col-xl-6">
+                                <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                    <svg class="icon icon-white">
+                                        <use xlink:href="../css/main.svg#moments--article-box"></use>
+                                    </svg>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Article Moment <span class="badge badge-info ml-3">Free</span>
+                                        <span class="badge badge-success">New</span>
+                                    </h5>
+                                    <div class="mb-3"><span class="text-coral">Marketing</span></div>
+                                    <p class="text-secondary">Let people ideate around your questions. Let people
+                                        ideate Let people ideate Let people ideate Let people ideate </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+
+</body>
+
+</html>

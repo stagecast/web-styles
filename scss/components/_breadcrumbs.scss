@@ -1,0 +1,38 @@
+// Breadcrumbs 
+.breadcrumb-item {
+    a {
+        color: $breadcrumb-color;
+    }
+
+    &.active {
+        background-color: $breadcrumb-active-bg-color;
+        margin-left: 2em;
+        padding: 0.25em 1.5em;
+        border-radius: 1em;
+        &::before {
+            display: inline-block; // Suppress underlining of the separator in modern browsers
+            padding-right: 0;
+            content: '';
+        }
+    }
+}
+
+.breadcrumb-white {
+    background-color: $breadcrumb-bg;
+  
+    .breadcrumb-item {
+      color: $white;
+  
+      + .breadcrumb-item::before {
+        color: $white;
+      }
+    }
+  
+    .breadcrumb-link {
+      color: $white;
+    }
+  }
+  
+  .breadcrumb-no-gutter {
+    padding: 0;
+  }

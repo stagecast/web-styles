@@ -3,34 +3,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// Navbar
-.navbar-nav {
-  li {
-    height: 70px;
-    text-align: center;
-    min-width: 90px;
-  }
-  li.active {
-    border-bottom: 4px solid $red;
-    background: lighten($primary, 10%)
-  }
-}
-
-// Breadcrumbs 
-.breadcrumb-item {
-  &.active {
-    background-color: $breadcrumb-active-bg-color;
-    margin-left: 2em;
-    padding: 0.25em 1.5em;
-    border-radius: 1em;
-    &::before {
-      display: inline-block; // Suppress underlining of the separator in modern browsers
-      padding-right: 0;
-      content: '';
-    }
-  }
-}
-
 .acustom-color {
   fill: red;
 }

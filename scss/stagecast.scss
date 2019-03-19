@@ -6,16 +6,23 @@
 @import 'sc-colors'; // new colors
 @import 'sc-variables'; // override bootstrap variables
 @import '../node_modules/bootstrap/scss/bootstrap'; // bootstrap
+
 // custom general syles (override bootstrap)
 @import 'sc-styles';
-// custom utilities
+
+// Utilities
 @import 'utilities/custom-borders';
 @import 'utilities/moments';
-// custom components
+@import 'utilities/transitions';
+
+// Components
 @import 'components/alerts';
-@import 'components/buttons';
-@import 'components/typography';
-@import 'components/progress';
+@import 'components/breadcrumbs';
+@import 'components/buttons/button-sizes';
+@import 'components/buttons/button-styles';
 @import 'components/inputs';
 @import 'components/input-groups';
 @import 'components/moment-card';
+@import 'components/navbar/navbar';
+@import 'components/progress';
+@import 'components/typography';

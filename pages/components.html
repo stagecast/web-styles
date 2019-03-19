@@ -9,57 +9,64 @@
 
   <!-- Custom built theme - This already includes Bootstrap 4 -->
   <!-- <link rel="stylesheet" href="css/icons/css/sprite.css"> -->
-  <link rel="stylesheet" href="css/stagecast.min.css">
+  <link rel="stylesheet" href="../css/stagecast.min.css">
 </head>
 
 <body class="bg-darkblue-100">
   <header class="navbar navbar-expand-lg navbar-dark bg-darkblue-300 pt-lg-0 pb-lg-0 fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#!"><img src="./css/imgs/logo-beta.svg" alt="Stagecast"></a>
+    <a class="navbar-brand" href="#!"><img src="../css/imgs/logo-beta.svg" alt="Stagecast"></a>
 
     <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
       <ul class="navbar-nav mr-auto mt-2 mt-md-0">
         <li class="nav-item">
-          <a class="nav-link mt-3" href="./index.html">Home
+          <a class="nav-link" href="../index.html">Home
             <span class="sr-only">(current)</span>
           </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mt-3" href="./forms.html">Forms
+        <!-- <li class="nav-item">
+              <a class="nav-link" href="./forms.html">Pages
+              </a>
+            </li> -->
+        <li class="nav-item active dropdown">
+
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">Pages
           </a>
+          <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item text-white" href="./colors.html">Colors</a>
+            <a class="dropdown-item text-white" href="./forms.html">Forms</a>
+            <a class="dropdown-item text-white" href="./icons.html">Icons</a>
+            <a class="dropdown-item active text-white" href="./components.html">Misc Components</a>
+            <div class="dropdown-divider bg-darkblue-500"></div>
+            <a class="dropdown-item text-white" href="./colors.html">Moment Store</a>
+          </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link mt-3" href="./colors.html">Colors
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-3" href="./icons.html">Icons</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link mt-3" href="./components.html">Components</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mt-3 disabled" href="#!">Disabled</a>
-        </li>
+        <!-- <li class="nav-item">
+              <a class="nav-link disabled" href="#!">Disabled</a>
+            </li> -->
       </ul>
     </div>
     <div class="navbar-collapse collapse order-2 dual-collapse2">
       <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      </form> -->
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          </form> -->
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown d-flex align-items-center" style="width: 160px">
           <div class="d-flex align-items-center">
-            <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg" alt="AB">
+            <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg"
+              alt="AB">
             <div class="text-left">
               <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
                 Smith</span>
               <span class="small d-block text-white ">Organiser</span>
             </div>
           </div>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
           </a>
           <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
             <a class="dropdown-item text-white" href="#">Action</a>
@@ -70,11 +77,11 @@
         </li>
 
         <li class="nav-item ">
-          <a class="nav-link mt-3" href="# ">Right</a>
+          <a class="nav-link" href="../documentation/index.html">Docs</a>
         </li>
-        <li class="nav-item ">
-          <a class="nav-link mt-3" href="# ">Link</a>
-        </li>
+        <!-- <li class="nav-item ">
+              <a class="nav-link" href="# ">Link</a>
+            </li> -->
       </ul>
     </div>
   </header>
@@ -106,7 +113,8 @@
           <div class="card text-white bg-darkblue-400 mb-2" style="max-width: 18rem; ">
             <div class="card-header d-flex justify-content-between">
               <div class="d-flex align-items-center">
-                <img class="rounded-circle img-responsive mr-3 " height="34" src="https://randomuser.me/api/portraits/lego/2.jpg" alt="Profile">
+                <img class="rounded-circle img-responsive mr-3 " height="34" src="https://randomuser.me/api/portraits/lego/2.jpg"
+                  alt="Profile">
                 <span class="font-weight-normal text-capitalize">Artist</span>
               </div>
               <div class="d-flex align-items-center">
@@ -132,7 +140,8 @@
           <div class="card text-white bg-darkblue-400 mb-2 d-inline-block" style="max-width: 18rem; ">
             <div class="card-header d-flex justify-content-between">
               <div class="d-flex align-items-center">
-                <img class="rounded-circle img-responsive mr-3 " height="34" src="https://randomuser.me/api/portraits/lego/3.jpg" alt="Profile">
+                <img class="rounded-circle img-responsive mr-3 " height="34" src="https://randomuser.me/api/portraits/lego/3.jpg"
+                  alt="Profile">
                 <span class="font-weight-normal text-capitalize">Artist</span>
               </div>
               <div class="d-flex align-items-center">
@@ -142,7 +151,8 @@
             </div>
             <div class="card-body">
               <h4 class="card-title ">Body title</h4>
-              <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text ">Some quick example text to build on the card title and make up the bulk of the
+                card's content.</p>
             </div>
             <div class="card-footer p-0">
               <button type="button" class="btn btn-darkblue-800 btn-block pt-3 pb-3">Close</button>
@@ -181,23 +191,23 @@
           <div class="moment-card text-white bg-darkblue-500 mb-2 d-inline-block">
             <div class="card-header coral-gradient text-center">
               <svg class="icon icon-white icon-lg">
-                <use xlink:href="css/main.svg#moments--collage-box"></use>
+                <use xlink:href="../css/main.svg#moments--collage-box"></use>
               </svg>
               <div class="card-header-options">
                 <button class="btn btn-sm btn-darkblue-800 card-option card-option-expandible progress-rounded">
                   <svg class="icon icon-white">
-                    <use xlink:href="css/main.svg#link-out-icon"></use>
+                    <use xlink:href="../css/main.svg#link-out-icon"></use>
                   </svg>
                   <span class="card-option-text">Screen</span>
                 </button>
                 <!-- <button class="btn btn-sm btn-darkblue-800 card-option card-option rounded-circle">
                                     <svg class="icon icon-white">
-                                        <use xlink:href="css/main.svg#plus-icon"></use>
+                                        <use xlink:href="../css/main.svg#plus-icon"></use>
                                     </svg>
                                 </button> -->
                 <button class="btn btn-sm btn-darkblue-800 card-option rounded-circle bg-darkblue-800">
                   <svg class="icon icon-white">
-                    <use xlink:href="css/main.svg#settings"></use>
+                    <use xlink:href="../css/main.svg#settings"></use>
                   </svg>
                 </button>
                 <div class="btn-group-vertical">
@@ -210,15 +220,19 @@
             </div>
             <div class="card-body">
               <h4 class="card-title ">Collage Moment</h4>
-              <p class="card-text small">Some quick example text to build on the card title. T his is a very long text that should be cut at a certain point. I don't know exactlu when thoug. i will keep on wrting until it's time to wrap up.
+              <p class="card-text small">Some quick example text to build on the card title. T his is a very long text
+                that should be cut at a certain point. I don't know exactlu when thoug. i will keep on wrting until
+                it's time to wrap up.
               </p>
               <div class="d-flex justify-content-between">
                 <div class="custom-control custom-radio" style="line-height:1.5rem">
-                  <input type="radio" id="customRadio1" value="1" name="customRadio1" class="custom-control-input" checked aria-checked="true">
+                  <input type="radio" id="customRadio1" value="1" name="customRadio1" class="custom-control-input"
+                    checked aria-checked="true">
                   <label class="custom-control-label text-sm" for="customRadio1">Manual</label>
                 </div>
                 <div class="custom-control custom-radio" style="line-height:1.5rem">
-                  <input type="radio" id="customRadio2" value="2" name="customRadio1" class="custom-control-input" aria-checked="true">
+                  <input type="radio" id="customRadio2" value="2" name="customRadio1" class="custom-control-input"
+                    aria-checked="true">
                   <label class="custom-control-label text-sm" for="customRadio2"> Schedule</label>
                 </div>
               </div>
@@ -241,7 +255,7 @@
                 <h5 class="modal-title ml-auto">Prepare for Launch!</h5>
                 <button type="button" class="close" aria-label="Close">
                   <svg class="icon icon-white">
-                    <use xlink:href="css/main.svg#close-icon"></use>
+                    <use xlink:href="../css/main.svg#close-icon"></use>
                   </svg>
                 </button>
               </div>
@@ -249,7 +263,7 @@
                 <div class="row justify-content-center">
                   <div class="col-10">
                     <p class="mt-4">You are about to launch a <svg class="icon icon-white">
-                        <use xlink:href="css/main.svg#moments--flash-box"></use>
+                        <use xlink:href="../css/main.svg#moments--flash-box"></use>
                       </svg> Flash Moment.</p>
                     <p class="mb-5">
                       Every participant to the event will be notified.
@@ -269,7 +283,8 @@
                               PM
                               - 10:00 PM</span>
                           </td>
-                          <td class="text-center border-secondary"><img width="150px" src="https://eurovisionfun.com/wp-content/uploads/2018/11/Melodifestivalen-2019-r.jpg" alt=""></td>
+                          <td class="text-center border-secondary"><img width="150px" src="https://eurovisionfun.com/wp-content/uploads/2018/11/Melodifestivalen-2019-r.jpg"
+                              alt=""></td>
 
                         </tr>
                       </tbody>
@@ -295,9 +310,12 @@
     </div>
   </main>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin=" anonymous "></script>
-  <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity=" sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin=" anonymous "></script>
-  <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity=" sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin=" anonymous "></script>
+  <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity=" sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin=" anonymous "></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity=" sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin=" anonymous "></script>
+  <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity=" sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+    crossorigin=" anonymous "></script>
 
 </body>
 

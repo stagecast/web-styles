@@ -31,6 +31,7 @@ $value in $gradients-map {
   .#{$color}-gradient {
     background-color: #{$color};
     background-image: $value;
+    background-repeat: no-repeat;
   }
 }
 

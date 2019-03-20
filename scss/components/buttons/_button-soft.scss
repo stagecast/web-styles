@@ -2,16 +2,11 @@
   Air Button Styles
 ------------------------------------*/
 
-@each $color, $value in $theme-colors {
+@each $color,
+$value in $theme-colors {
+
     /* #{$color} air */
     .btn-soft-#{$color} {
-      @include button-soft($value, $value, $value, $value);
+        @include button-soft($value, $value, $value, $value);
     }
-  }
-  
-  @each $color, $value in $secondary-colors {
-    /* #{$color} air */
-    .btn-soft-#{$color} {
-      @include button-soft($value, $value, $value, $value);
-    }
-  }
+}

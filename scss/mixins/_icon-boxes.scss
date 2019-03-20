@@ -1,0 +1,10 @@
+@mixin icon-box($dimension) {
+    height: $dimension;
+    width: $dimension;
+    line-height: $dimension;
+    .icon {
+        height: $dimension;
+        width: $dimension;
+    }
+  }
+  

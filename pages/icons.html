@@ -13,8 +13,9 @@
 
 <body class="bg-darkblue-100">
   <header class="navbar navbar-expand-lg navbar-dark bg-darkblue-300 pt-lg-0 pb-lg-0 fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-      aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+      data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#!"><img src="../css/imgs/logo-beta.svg" alt="Stagecast"></a>
@@ -32,7 +33,7 @@
             aria-haspopup="true" aria-expanded="false">Pages
           </a>
           <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item active text-white" href="./buttons.html">Buttons</a>
+            <a class="dropdown-item active text-white" href="./buttons.html">Buttons</a>
 
             <a class="dropdown-item text-white" href="./colors.html">Colors</a>
             <a class="dropdown-item text-white" href="./forms.html">Forms</a>
@@ -48,10 +49,11 @@
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown d-flex align-items-center" style="width: 160px">
           <div class="d-flex align-items-center">
-            <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg"
-              alt="AB">
+            <img class="rounded-circle img-responsive mr-3 " height="40px "
+              src="https://randomuser.me/api/portraits/lego/1.jpg" alt="AB">
             <div class="text-left">
-              <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+              <span class="text-white d-block"
+                style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
                 Smith</span>
               <span class="small d-block text-white ">Organiser</span>
             </div>
@@ -60,7 +62,7 @@
             aria-haspopup="true" aria-expanded="false">
           </a>
           <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item active text-white" href="./buttons.html">Buttons</a>
+            <a class="dropdown-item active text-white" href="./buttons.html">Buttons</a>
 
             <a class="dropdown-item text-white" href="#">Action</a>
             <a class="dropdown-item text-white" href="#">Another action</a>
@@ -78,26 +80,56 @@
   <main role="main">
 
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-
-          <!--Breadcrumb-->
-          <nav aria-label="breadcrumb" role="navigation">
-            <ol class="breadcrumb mt-2 bg-darkblue-200 text-white">
-              <li class="breadcrumb-item"><a href="# " class="text-secondary">Production</a></li>
-              <li class="breadcrumb-item"><a href="# " class="text-secondary">Event List</a></li>
-              <li class="breadcrumb-item"><a href="# " class="text-secondary">Test Event</a></li>
-              <li class="breadcrumb-item active small" aria-current="page ">7:30 PM - 24th Nov.</li>
-            </ol>
-          </nav>
-        </div>
-      </div>
+    <div class="container">
       <!-- General Icons -->
-      <div class="row mt-3 ">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h1>Sizes</h1>
+          <div class="d-flex align-items-end">
+            <div class="m-4 border-white text-center" style="width:200px">
+              <div class="coral-gradient rounded-circle icon-box-xs m-auto">
+                <svg class="icon icon-white">
+                  <use xlink:href="../css/main.svg#moments--collage-box"></use>
+                </svg>
+              </div>
+              <p class="text-white mt-2 text-monospace">.icon-box-xs</p>
+
+            </div>
+            <div class="m-4 border-white text-center" style="width:200px">
+              <div class="coral-gradient rounded icon-box m-auto">
+
+                <svg class="icon icon-white">
+                  <use xlink:href="../css/main.svg#moments--collage-box"></use>
+                </svg>
+              </div>
+              <p class="text-white mt-2 text-monospace">.icon-box</p>
+
+            </div>
+            <div class="m-4 border-white text-center" style="width:200px">
+              <div class="coral-gradient rounded icon-box-lg m-auto">
+
+                <svg class="icon icon-white">
+                  <use xlink:href="../css/main.svg#moments--collage-box"></use>
+                </svg>
+              </div>
+              <p class="text-white mt-2 text-monospace">.icon-box-lg</p>
+
+            </div>
+            <div class="m-4 border-white text-center" style="width:200px">
+              <div class="coral-gradient rounded icon-box-xl m-auto">
+
+                <svg class="icon icon-white">
+                  <use xlink:href="../css/main.svg#moments--collage-box"></use>
+                </svg>
+              </div>
+              <p class="text-white mt-2 text-monospace">.icon-box-xl</p>
+
+            </div>
+          </div>
+        </div>
         <div class="col-12">
 
-          <h1 class="mb-3">General Icons</h1>
+          <h1 class="mb-3">Application Icons</h1>
         </div>
         <div class="m-4  text-center" style="width:100px">
           <svg class="icon icon-white">
@@ -395,7 +427,7 @@
         </div>
         <!-- Article -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--article-box"></use>
@@ -407,7 +439,7 @@
         <!-- Branded Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
 
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--branded-collage-box"></use>
             </svg>
@@ -417,7 +449,7 @@
         </div>
         <!-- Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--collage-box"></use>
@@ -429,7 +461,7 @@
         <!-- Color -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -441,7 +473,7 @@
         <!-- Coupon -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--coupon-box"></use>
@@ -453,7 +485,7 @@
         <!-- Duel -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--duel-box"></use>
@@ -465,7 +497,7 @@
         <!-- Feedback -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--feedback-box"></use>
@@ -476,7 +508,7 @@
         </div>
         <!-- Filter -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--filter-box"></use>
@@ -487,7 +519,7 @@
         </div>
         <!-- Flash -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--flash-box"></use>
@@ -498,7 +530,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-artist-box"></use>
@@ -509,7 +541,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-playlist-box"></use>
@@ -520,7 +552,7 @@
         </div>
         <!-- Html -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--html-box"></use>
@@ -531,7 +563,7 @@
         </div>
         <!-- Ideation -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--ideation-box"></use>
@@ -542,7 +574,7 @@
         </div>
         <!-- Lottery -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--lottery-box"></use>
@@ -553,7 +585,7 @@
         </div>
         <!-- Merchandise -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--merchandise-box"></use>
@@ -564,7 +596,7 @@
         </div>
         <!-- Notelet -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--notelet-box"></use>
@@ -575,7 +607,7 @@
         </div>
         <!-- Picture -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--picture-box"></use>
@@ -586,7 +618,7 @@
         </div>
         <!-- Pixel -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--pixel-box"></use>
@@ -597,7 +629,7 @@
         </div>
         <!-- Telegram -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--telegram-box"></use>
@@ -608,7 +640,7 @@
         </div>
         <!-- Video -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--video-box"></use>
             </svg>
@@ -618,7 +650,7 @@
         </div>
         <!-- Voting -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--voting-box"></use>
@@ -629,7 +661,7 @@
         </div>
         <!-- Welcome -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xs rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-xs rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--welcome-box"></use>
@@ -647,7 +679,7 @@
         </div>
         <!-- Article -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--article-box"></use>
@@ -659,7 +691,7 @@
         <!-- Branded Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
 
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--branded-collage-box"></use>
             </svg>
@@ -669,7 +701,7 @@
         </div>
         <!-- Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--collage-box"></use>
@@ -681,7 +713,7 @@
         <!-- Color -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -693,7 +725,7 @@
         <!-- Coupon -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--coupon-box"></use>
@@ -705,7 +737,7 @@
         <!-- Duel -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--duel-box"></use>
@@ -717,7 +749,7 @@
         <!-- Feedback -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--feedback-box"></use>
@@ -728,7 +760,7 @@
         </div>
         <!-- Filter -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--filter-box"></use>
@@ -739,7 +771,7 @@
         </div>
         <!-- Flash -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--flash-box"></use>
@@ -750,7 +782,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-artist-box"></use>
@@ -761,7 +793,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-playlist-box"></use>
@@ -772,7 +804,7 @@
         </div>
         <!-- Html -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--html-box"></use>
@@ -783,7 +815,7 @@
         </div>
         <!-- Ideation -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--ideation-box"></use>
@@ -794,7 +826,7 @@
         </div>
         <!-- Lottery -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--lottery-box"></use>
@@ -805,7 +837,7 @@
         </div>
         <!-- Merchandise -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--merchandise-box"></use>
@@ -816,7 +848,7 @@
         </div>
         <!-- Notelet -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--notelet-box"></use>
@@ -827,7 +859,7 @@
         </div>
         <!-- Picture -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--picture-box"></use>
@@ -838,7 +870,7 @@
         </div>
         <!-- Pixel -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--pixel-box"></use>
@@ -849,7 +881,7 @@
         </div>
         <!-- Telegram -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--telegram-box"></use>
@@ -860,7 +892,7 @@
         </div>
         <!-- Video -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--video-box"></use>
             </svg>
@@ -870,7 +902,7 @@
         </div>
         <!-- Voting -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--voting-box"></use>
@@ -881,7 +913,7 @@
         </div>
         <!-- Welcome -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container rounded-circle m-auto">
+          <div class="coral-gradient rounded icon-box-lg rounded-circle m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--welcome-box"></use>
@@ -899,7 +931,7 @@
         </div>
         <!-- Article -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--article-box"></use>
@@ -911,7 +943,7 @@
         <!-- Branded Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
 
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--branded-collage-box"></use>
             </svg>
@@ -921,7 +953,7 @@
         </div>
         <!-- Collage -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--collage-box"></use>
@@ -933,7 +965,7 @@
         <!-- Color -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -945,7 +977,7 @@
         <!-- Coupon -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--coupon-box"></use>
@@ -957,7 +989,7 @@
         <!-- Duel -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--duel-box"></use>
@@ -969,7 +1001,7 @@
         <!-- Feedback -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--feedback-box"></use>
@@ -980,7 +1012,7 @@
         </div>
         <!-- Filter -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--filter-box"></use>
@@ -991,7 +1023,7 @@
         </div>
         <!-- Flash -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--flash-box"></use>
@@ -1002,7 +1034,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-artist-box"></use>
@@ -1013,7 +1045,7 @@
         </div>
         <!-- Follow Artist -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--follow-playlist-box"></use>
@@ -1024,7 +1056,7 @@
         </div>
         <!-- Html -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--html-box"></use>
@@ -1035,7 +1067,7 @@
         </div>
         <!-- Ideation -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--ideation-box"></use>
@@ -1046,7 +1078,7 @@
         </div>
         <!-- Lottery -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--lottery-box"></use>
@@ -1057,7 +1089,7 @@
         </div>
         <!-- Merchandise -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--merchandise-box"></use>
@@ -1068,7 +1100,7 @@
         </div>
         <!-- Notelet -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--notelet-box"></use>
@@ -1079,7 +1111,7 @@
         </div>
         <!-- Picture -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--picture-box"></use>
@@ -1090,7 +1122,7 @@
         </div>
         <!-- Pixel -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--pixel-box"></use>
@@ -1101,7 +1133,7 @@
         </div>
         <!-- Telegram -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--telegram-box"></use>
@@ -1112,7 +1144,7 @@
         </div>
         <!-- Video -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--video-box"></use>
             </svg>
@@ -1122,7 +1154,7 @@
         </div>
         <!-- Voting -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--voting-box"></use>
@@ -1133,7 +1165,7 @@
         </div>
         <!-- Welcome -->
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--welcome-box"></use>
@@ -1153,7 +1185,7 @@
         <!-- Color Purple -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="purple-gradient moment-button-container-xl m-auto">
+          <div class="purple-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1165,7 +1197,7 @@
         <!-- Color Green -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="green-gradient moment-button-container-xl m-auto">
+          <div class="green-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1177,7 +1209,7 @@
         <!-- Color Yellow -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="yellow-gradient moment-button-container-xl m-auto">
+          <div class="yellow-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1189,7 +1221,7 @@
         <!-- Color Coral -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1201,7 +1233,7 @@
         <!-- Color Red -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="red-gradient moment-button-container-xl m-auto">
+          <div class="red-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-white">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1214,7 +1246,7 @@
         <!-- Color Purple -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="purple-gradient moment-button-container-xl m-auto">
+          <div class="purple-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-yellow">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1226,7 +1258,7 @@
         <!-- Color Green -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="green-gradient moment-button-container-xl m-auto">
+          <div class="green-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-red">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1238,7 +1270,7 @@
         <!-- Color Yellow -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="yellow-gradient moment-button-container-xl m-auto">
+          <div class="yellow-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-purple">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1250,7 +1282,7 @@
         <!-- Color Coral -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="coral-gradient moment-button-container-xl m-auto">
+          <div class="coral-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-brightblue-200">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1262,7 +1294,7 @@
         <!-- Color Red -->
 
         <div class="m-4 border-white text-center" style="width:200px">
-          <div class="red-gradient moment-button-container-xl m-auto">
+          <div class="red-gradient rounded icon-box-xl m-auto">
 
             <svg class="icon icon-green">
               <use xlink:href="../css/main.svg#moments--color-box"></use>
@@ -1276,12 +1308,15 @@
   </main>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
-    crossorigin="anonymous "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
-    crossorigin="anonymous "></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
-    crossorigin="anonymous "></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+  </script>
 
 </body>
 

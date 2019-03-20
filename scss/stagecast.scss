@@ -17,13 +17,13 @@
 // Mixins
 @import "mixins/badges";
 @import "mixins/buttons";
+@import "mixins/icon-boxes";
 
 // Custom general syles
 @import 'sc-styles';
 
 // Utilities
 @import 'utilities/borders';
-@import 'utilities/moments';
 @import 'utilities/opacity';
 @import 'utilities/overflow';
 @import 'utilities/sizing';
@@ -38,6 +38,8 @@
 @import 'components/buttons/button-soft';
 @import 'components/buttons/button-sizes';
 @import 'components/buttons/button-styles';
+@import 'components/icons/icons';
+@import 'components/icons/incon-boxes';
 @import 'components/inputs';
 @import 'components/input-groups';
 @import 'components/moment-card';

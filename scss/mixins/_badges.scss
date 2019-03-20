@@ -1,6 +1,7 @@
 @mixin soft-badge-variant($bg) {
     color: $bg;
     background-color: rgba($bg, .1);
+    font-weight: $font-weight-semibold;
   
     &[href] {
       @include hover-focus {

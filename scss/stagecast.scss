@@ -1,13 +1,23 @@
-/** 
+/**----------------------------------------------------------------------
  * Stagecast Custom Bootstrap 4 Theme
- * Built on top of Twitter Bootstrap 4 (https://getbootstrap.com)
- */
+ * Copyright 2019 Stagecast AB
+ * Licensed under Bootstrap Themes (https://themes.getbootstrap.com/licenses/) 
+ ------------------------------------------------------------------------*/
 
-@import 'sc-colors'; // new colors
-@import 'sc-variables'; // override bootstrap variables
+ // Stagecast colors
+@import 'sc-colors';
+
+// Stagecast setup (override bootstrap variables)
+@import 'sc-variables';
+
+// Bootstrap core
 @import '../node_modules/bootstrap/scss/bootstrap'; // bootstrap
 
-// custom general syles (override bootstrap)
+
+// Mixins
+@import "mixins/buttons";
+
+// Custom general syles
 @import 'sc-styles';
 
 // Utilities
@@ -23,6 +33,7 @@
 // Components
 @import 'components/alerts';
 @import 'components/breadcrumbs';
+@import 'components/buttons/button-soft';
 @import 'components/buttons/button-sizes';
 @import 'components/buttons/button-styles';
 @import 'components/inputs';

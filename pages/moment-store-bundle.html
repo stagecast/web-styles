@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Moment Store Bundle</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/stagecast.min.css">
+    <style>
+        .media:hover, .media:focus {
+            /* flex-basis: 30%; */
+            background-color: #29334A;
+            transition: background-color 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .card-img-top {
+            overflow: hidden;
+        }
+        .card-img-top img {
+            height: 300px; 
+            width:100%;
+            object-fit: cover;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 4.5rem;
+            width: 17rem;
+            height: 100%;
+            padding-top: 2rem;
+            z-index: 100;
+        }
+
+        .main-content {
+            padding-right: 0rem;
+            padding-left: 17rem;
+        }
+        .parallax {
+            /* The image used */
+            background-image: url("https://assets.visitphilly.com/wp-content/uploads/2018/06/festival-pier-penns-landing-new-crtsy-festival-pier-2200x1237px.jpg");
+
+            /* Set a specific height */
+            height: 500px; 
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 0 auto;
+        }
+        .timeline .timeline-center-line {
+            position: absolute;
+            width: 1px;
+            height: 100%;
+            top: 0;
+            left: 12.5%;
+            margin-left: -2px;
+            background: #354361;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body class="bg-darkblue-200">
+    <header class="navbar navbar-expand-lg navbar-dark bg-darkblue-300 pt-lg-0 pb-lg-0 fixed-top">
+        <a class="navbar-brand" href="#!"><img src="../css/imgs/logo-beta.svg" alt="Stagecast"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown active">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-success">New</span>
+                        Pages
+                    </a>
+                    <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="./colors.html">Colors</a>
+                        <a class="dropdown-item text-white" href="./forms.html">Forms</a>
+                        <a class="dropdown-item text-white" href="./icons.html">Icons</a>
+                        <a class="dropdown-item text-white" href="./components.html">Misc Components</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white active" href="./moment-store.html">Moment Store</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse order-2 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle img-responsive mr-3 " height="40px " src="https://randomuser.me/api/portraits/lego/1.jpg"
+                            alt="AB">
+                        <div class="text-left">
+                            <span class="text-white d-block" style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+                                Smith</span>
+                            <span class="small d-block text-white ">Organiser</span>
+                        </div>
+                    </div>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu bg-darkblue-300 text-white" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="#">Action</a>
+                        <a class="dropdown-item text-white" href="#">Another action</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white" href="#">Something else here</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./documentation/index.html">
+                        Docs
+                    </a>
+                </li>
+                <!-- <li class="nav-item ">
+          <a class="nav-link mt-3" href="# ">Link</a>
+        </li> -->
+            </ul>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="bg-darkblue-100 p-4 sidebar">
+                    <div class="input-group mb-5">
+                        <div class="input-group-prepend">
+                            <div class="input-group-icon">
+                                <svg class="icon icon-white">
+                                    <use xlink:href="../css/main.svg#search-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <input type="text" name="inputIcons2" placeholder="Search..." class="form-control">
+                    </div>
+                    <div class="section mb-5">
+                        <h3>Staff Picks</h3>
+                        <ul class="text-white list-unstyled">
+                            <li class="mb-2"><a class="text-coral" href="#">Moment Bundle</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">Recently Used</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="#">New In</a></li>
+                        </ul>
+                    </div>
+                    <div class="section mb-5">
+                        <h3>Categories</h3>
+                        <ul class="text-white list-unstyled">
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">All</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">Utilities</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">Crowd Games</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">Marketing</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">Special
+                                    Effects</a></li>
+                            <li class="mb-2"><a class="text-secondary" href="./moment-store-results.html">Second Screen</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h3>Filters</h3>
+                        <div>
+                            <span class="badge badge-info">Free</span>
+                            <span class="badge badge-success">New</span>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Main Content -->
+                <div class="col-12 main-content">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 p-5">
+                                <div class="parallax" style="margin: -48px;">
+                                    <!--Breadcrumb-->
+                                    <nav aria-label="breadcrumb" role="navigation">
+                                        <ol class="breadcrumb small pt-4 ml-4 text-white">
+                                            <li class="breadcrumb-item"><a href="./moment-store.html" class="text-secondary">Moment
+                                                    Store</a></li>
+                                            <li class="breadcrumb-item"><a href="#" class="text-secondary">Moment
+                                                    Bundle</a></li>
+                                            <li class="breadcrumb-item"><a href="#" class="text-white">Show Bundle</a></li>
+                                        </ol>
+                                    </nav>
+
+                                </div>
+                                <div class="bg-darkblue-300 p-4" style="margin: 0 -48px;">
+                                    <h1 class="ml-4">Show Bundle</h1>
+                                </div>
+                                <div class="text-white mt-5 mb-5">
+                                    <p class="h4">
+                                        This Bundle is about Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                        sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis
+                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        Duis aute
+                                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                        nulla
+                                        pariatur.
+                                    </p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 timeline">
+                                        <div class="timeline-title"></div>
+                                        <div class="timeline-center-line"></div>
+                                        <div class="timeline-entry row">
+                                            <div class="col-3 text-center mt-4">
+                                                <div class="badge badge-secondary">Preshow</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="media mb-3 mr-3 col-12 col-xl-10 p-3 rounded transition-3d-hover">
+                                                    <div class="align-self-start mr-3 coral-gradient moment-button-container rounded">
+                                                        <svg class="icon icon-white">
+                                                            <use xlink:href="../css/main.svg#moments--ideation-box"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h5 class="mt-0 mb-0">Ideation Moment <span class="badge badge-info ml-3">Free</span></h5>
+                                                        <div class="mb-3"><span class="text-coral">Crowd Games</span>/<span
+                                                                class="text-coral">Marketing
+                                                            </span>/<span class="text-coral">Special Effects</span></div>
+                                                        <p class="text-secondary">Let people ideate around your
+                                                            questions.
+                                                            Let
+                                                            people
+                                                            ideate Let people ideate Let people ideate Let people
+                                                            ideate
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 mt-4">
+                                                <p class="large text-white">
+                                                    Use the Voting Moment to bridge waiting time before the evnet
+                                                    starts. The attendants will thank you! </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy "
+        crossorigin="anonymous "></script>
+
+</body>
+
+</html>

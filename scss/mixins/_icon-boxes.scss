@@ -1,7 +1,8 @@
-@mixin icon-box($dimension) {
+@mixin icon-box($dimension, $radius) {
     height: $dimension;
     width: $dimension;
     line-height: $dimension;
+    border-radius: $radius;
     .icon {
         height: $dimension;
         width: $dimension;

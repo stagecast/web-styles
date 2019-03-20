@@ -1,12 +1,12 @@
 .icon-box-xs {
-  @include icon-box(1.5625rem);
+  @include icon-box(1.5625rem, 1rem);
 }
 .icon-box {
-  @include icon-box(2.1875rem);
+  @include icon-box(2.1875rem, 0.625rem);
 }
 .icon-box-lg {
-  @include icon-box(4.375rem);
+  @include icon-box(4.375rem, 1.25rem);
 }
 .icon-box-xl {
-  @include icon-box(6.875rem);
+  @include icon-box(6.875rem, 1.875rem);
 }

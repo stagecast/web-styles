@@ -1,0 +1,13 @@
+@mixin soft-badge-variant($bg) {
+    color: $bg;
+    background-color: rgba($bg, .1);
+  
+    &[href] {
+      @include hover-focus {
+        color: $bg;
+        text-decoration: none;
+        background-color: rgba($bg, .5);
+      }
+    }
+  }
+  

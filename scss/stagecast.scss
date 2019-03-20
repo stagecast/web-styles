@@ -15,6 +15,7 @@
 
 
 // Mixins
+@import "mixins/badges";
 @import "mixins/buttons";
 
 // Custom general syles
@@ -32,6 +33,7 @@
 
 // Components
 @import 'components/alerts';
+@import 'components/badges/badges-soft';
 @import 'components/breadcrumbs';
 @import 'components/buttons/button-soft';
 @import 'components/buttons/button-sizes';

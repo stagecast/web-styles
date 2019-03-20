@@ -87,7 +87,7 @@ $value in $active-map {
 }
 
 $theme-colors: ("darkblue": $darkblue, "brightblue": $brightblue, "purple": $purple, "coral": $coral, "red": $red, "yellow": $yellow, "green": $green);
-$blues: ("darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-100);
+$blues: ("darkblue-100": $darkblue-100, "darkblue-200": $darkblue-200, "darkblue-300": $darkblue-300, "darkblue-400": $darkblue-400, "darkblue-500": $darkblue-500, "darkblue-600": $darkblue-600, "darkblue-700": $darkblue-700, "darkblue-800": $darkblue-800, "brightblue-100": $brightblue-100, "brightblue-200": $brightblue-200, "brightblue-300": $brightblue-300);
 $theme-colors: map-merge($blues, $theme-colors);
 @each $color,
 $value in $theme-colors {

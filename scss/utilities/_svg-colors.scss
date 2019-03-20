@@ -1,0 +1,68 @@
+
+/*------------------------------------
+  Fill Colors
+------------------------------------*/
+
+.fill {
+	&-none {
+  	fill: none !important;
+  }
+
+	&-white {
+  	fill: $white !important;
+  }
+
+  &-dark {
+    fill: $dark !important;
+  }
+
+  &-primary {
+    fill: $primary !important;
+  }
+
+  &-success {
+  	fill: $success !important;
+  }
+
+  &-info {
+    fill: $info !important;
+  }
+
+  &-danger {
+  	fill: $danger !important;
+  }
+
+  &-warning {
+  	fill: $warning !important;
+  }
+}
+
+/*------------------------------------
+  Stroke Colors
+------------------------------------*/
+
+.stroke {
+    &-white {
+      stroke: $white !important;
+    }
+  
+    &-primary {
+        stroke: $primary !important;
+    }
+  
+    &-success {
+        stroke: $success !important;
+    }
+  
+    &-danger {
+        stroke: $danger !important;
+    }
+  
+    &-warning {
+      stroke: $warning !important;
+    }
+  
+    &-info {
+      stroke: $info !important;
+    }
+}

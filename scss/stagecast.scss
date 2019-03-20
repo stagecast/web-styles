@@ -11,9 +11,14 @@
 @import 'sc-styles';
 
 // Utilities
-@import 'utilities/custom-borders';
+@import 'utilities/borders';
 @import 'utilities/moments';
+@import 'utilities/opacity';
+@import 'utilities/overflow';
+@import 'utilities/sizing';
+@import 'utilities/svg-colors';
 @import 'utilities/transitions';
+@import 'utilities/z-index';
 
 // Components
 @import 'components/alerts';

@@ -60,13 +60,13 @@ $btn-border-width:                0;
 
 // general
 $input-placeholder-color:         $secondary;
-$input-bg:                        $darkblue-400;
-$input-disabled-bg:               $darkblue-400;
+$input-bg:                        $darkblue-600;
+$input-disabled-bg:               rgba($darkblue-600, 0.2);
 // $input-box-shadow: none;
 $input-border-radius:             0.25rem;
-$input-border-color:              $darkblue-400;
-$input-group-addon-border-color:  $darkblue-400;
-$input-group-addon-bg:            $darkblue-400;
+$input-border-color:              transparent;
+$input-group-addon-border-color:  transparent;
+$input-group-addon-bg:            $darkblue-600;
 $input-color:                     $white;
 $input-placeholder-color:         $secondary;
 $input-focus-box-shadow:          0;
@@ -121,7 +121,7 @@ $custom-radio-indicator-icon-default:             url("data:image/svg+xml;charse
 // Checkbox
 $custom-checkbox-indicator-icon-checked:          url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2218%22%20height%3D%2216%22%20viewBox%3D%220%200%2018%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M2.85777%209.09902L7.12342%2013.0201L15.6015%203.6437%22%20stroke%3D%22white%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
 $custom-checkbox-indicator-indeterminate-bg:      $green;
-$custom-checkbox-indicator-bg:                    $darkblue-400;
+$custom-checkbox-indicator-bg:                    $darkblue-600;
 $custom-checkbox-indicator-checked-bg:            $green;
 $custom-checkbox-indicator-indeterminate-color:   $green;
 $custom-checkbox-indicator-icon-indeterminate:    url("data:image/svg+xml;charset=utf8,%3Csvg%20width%3D%2214%22%20height%3D%223%22%20viewBox%3D%220%200%2014%203%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cline%20x1%3D%221.5%22%20y1%3D%221.5%22%20x2%3D%2212.5%22%20y2%3D%221.5%22%20stroke%3D%22white%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%2F%3E%0A%3C%2Fsvg%3E%0A");
@@ -129,8 +129,8 @@ $custom-checkbox-indicator-size:                  30px;
 $custom-checkbox-indicator-size-sm:               $custom-checkbox-indicator-size - 10;
 $custom-checkbox-indicator-size-lg:               $custom-checkbox-indicator-size + 10;
 // Toggle/switch (custom element)
-$switch-checked-bg-color:                         $darkblue-400;
-$switch-not-checked-bg-color:                     $darkblue-400;
+$switch-checked-bg-color:                         $darkblue-600;
+$switch-not-checked-bg-color:                     $darkblue-600;
 $switch-button-checked-bg-color:                  $green;
 $switch-button-default-bg-color:                  $brightblue-100;
 $switch-button-not-checked-bg-color:              $red;
@@ -150,7 +150,7 @@ $breadcrumb-divider:                                        url("data:image/svg+
 $breadcrumb-color:                                          $brightblue-100;
 $breadcrumb-active-color:                                   $white;
 $breadcrumb-bg:                                             transparent !default;
-$breadcrumb-active-bg-color:                                $darkblue-300;
+$breadcrumb-active-bg-color:                                $darkblue-700;
 $breadcrumb-item-padding: 1.5em;
 $breadcrumb-margin-bottom:                                  .5rem !default;
 
@@ -160,11 +160,12 @@ $breadcrumb-margin-bottom:                                  .5rem !default;
 $dropdown-link-hover-color:                                 $darkblue-300;
 $dropdown-link-hover-color:                                 $white;
 $dropdown-link-hover-bg:                                    $darkblue-500 !default;
-$dropdown-divider-bg:                                       $darkblue-800;
-
+$dropdown-divider-bg:                                       $darkblue-500;
+$dropdown-link-active-bg:                                   $darkblue-500;
 // Navbar
 // =========================================================
-$navbar-dark-hover-bg:                                      $darkblue-500 !default;
+$navbar-dark-bg:                                            $darkblue-900 !default;
+$navbar-dark-hover-bg:                                      $darkblue-800 !default;
 
 
 /*

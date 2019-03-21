@@ -1,0 +1,6 @@
+@each $color, $value in $hover-palette {
+    @include text-emphasis-variant(".text-#{$color}", $value);
+}
+@each $color, $value in $active-palette {
+    @include text-emphasis-variant(".text-#{$color}", $value);
+}

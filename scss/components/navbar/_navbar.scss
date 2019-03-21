@@ -1,5 +1,7 @@
 // Navbar
 .navbar-dark {
+  background-color: $navbar-dark-bg;
+  
   .navbar-nav {
     .nav-item {
       @include hover-focus {
@@ -12,8 +14,17 @@
       min-width: 90px;
       &.active {
         border-bottom: 4px solid $red;
-        background: lighten($primary, 10%)
+        background: lighten($navbar-dark-hover-bg, 10%)
       }
     }
   }
+
+  .dropdown-menu {
+    background-color: $navbar-dark-bg; 
+    color: $white;
+  }
+}
+
+.navbar-bottom-shadow {
+  box-shadow: 0 3px 5px 0 rgba(15,19,25,.5);
 }

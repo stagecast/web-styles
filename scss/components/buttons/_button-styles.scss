@@ -5,7 +5,6 @@ $value in $hover-palette {
   }
 }
 
-$active-pallete: ('danger': $red-active, 'info': $purple-active, 'success': $green-active, 'warning': $yellow-active, 'primary': $darkblue-100, 'secondary': $brightblue-100, 'coral': $coral-active);
 @each $color,
 $value in $active-pallete {
   .btn-#{$color}:focus,

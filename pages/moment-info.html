@@ -145,9 +145,14 @@
                 </div>
                 <div class="col-12 pt-5">
                     <div class="row pt-5 justify-content-xl-center">
-                        <div class="col-8 col-xl-6">
+                        <div class="col-12 col-md-8 col-xl-6">
                             <div class="text-center">
-                                <img style="max-width: 100%;" src="./assets/svg/stage-phone.svg" alt="Nono">
+                                <div id="img-loader" class="d-flex bg-darkblue-300 rounded w-75 m-auto"
+                                    style="height:400px">
+                                    <img class=" m-auto" src="../css/svg/preloaders--circular-preloader.svg" alt="">
+                                </div>
+                                <img id="img-moment" style="max-width: 100%;" src="./assets/svg/stage-phone.svg"
+                                    alt="Nono">
                             </div>
                             <div class="row">
                                 <div class="col-12 col-md-6">
@@ -164,7 +169,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4 col-xl-3">
+                        <div class="col-12 col-md-4 col-xl-3">
                             <div class="section mb-5">
                                 <h4 class="border-bottom border-darkblue-600">Categories</h4>
                                 <div>
@@ -228,7 +233,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
     </script>
+    <script>
+        $('document').ready(function () {
 
+            // $('#img-loader').show();
+
+            // main image loaded ?
+            $('#img-moment').on('load', function () {
+                // hide/remove the loading image
+                $('#img-loader').remove();
+            });
+        });
+    </script>
 </body>
 
 </html>

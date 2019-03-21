@@ -34,6 +34,11 @@ $font-family-base:                $font-family-sans-serif;
 $text-muted:                      $secondary;
 
 /*
+ * Box Shadows
+ */
+$btn-box-shadow-value:            0 4px 11px !default;
+
+/*
  * Transitions
  */
 $transition-timing:               .3s !default;

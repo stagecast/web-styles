@@ -13,6 +13,34 @@ $value in $active-pallete {
   }
 }
 
+@each $color, $value in $theme-colors {
+	/* #{$color} button :hover, :focus, :active effects */
+  .btn-#{$color}, .btn-soft-#{$color} {
+    &[href],
+    &[type] {
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: $btn-box-shadow-value rgba($value, 0.20);
+      }
+    }
+  }
+}
+
+@each $color, $value in $gradients-map {
+	/* #{$color} button :hover, :focus, :active effects */
+  .btn.#{$color}-gradient {
+    &[href],
+    &[type] {
+      &:hover,
+      &:focus,
+      &:active {
+        box-shadow: $btn-box-shadow-value rgba(unquote(#{$color}), 0.20);
+      }
+    }
+  }
+}
+
 .btn {
   border: none;
 }

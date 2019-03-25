@@ -33,14 +33,27 @@ $font-family-monospace:           Menlo, Monaco, Consolas, "Courier New", monosp
 $font-family-base:                $font-family-sans-serif;
 $text-muted:                      $secondary;
 
-/*
- * Box Shadows
- */
+// Spacing 
+$spacer: 1rem;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),         // 4px
+    2: ($spacer * .5),          // 8px
+    3: $spacer,                 // 16px
+    4: ($spacer * 1.5),         // 24px
+    5: ($spacer * 2),           // 32px
+    6: ($spacer * 3),           // 48px
+    7: ($spacer * 4),           // 64px
+    8: ($spacer * 6),           // 96px
+    9: ($spacer * 8)            // 128px
+  );
+
+
+// Box Shadows
 $btn-box-shadow-value:            0 4px 11px !default;
 
-/*
- * Transitions
- */
+// Transitions
 $transition-timing:               .3s !default;
 $transition-timing-sm:            .2s !default;
 $transition-timing-md:            .4s !default;

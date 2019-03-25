@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Moment Information</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/stagecast.min.css">
+    <style>
+        .media:hover,
+        .media:focus {
+            /* flex-basis: 30%; */
+            background-color: #29334A;
+            transition: background-color 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .card-img-top {
+            overflow: hidden;
+        }
+
+        .card-img-top img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-darkblue-900">
+    <header class="navbar navbar-expand-lg navbar-dark  pt-lg-0 pb-lg-0 fixed-top">
+        <a class="navbar-brand" href="#!"><img src="../css/imgs/logo-beta.svg" alt="Stagecast"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse w-100 order-0" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown active">
+
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="badge badge-soft-success">New</span>
+                        Pages
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="./buttons.html">Buttons</a>
+                        <a class="dropdown-item text-white" href="./colors.html">Colors</a>
+                        <a class="dropdown-item text-white" href="./forms.html">Forms</a>
+                        <a class="dropdown-item text-white" href="./icons.html">Icons</a>
+                        <a class="dropdown-item text-white" href="./components.html">Misc Components</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white" href="./moment-store.html">Moment Store</a>
+                        <a class="dropdown-item text-white active" href="./profile-main.html">Profile</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-collapse collapse order-2 dual-collapse2">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown d-flex align-items-center">
+                    <div class="d-flex align-items-center">
+                        <img class="rounded-circle img-responsive mr-3 " height="40px "
+                            src="https://randomuser.me/api/portraits/lego/1.jpg" alt="AB">
+                        <div class="text-left">
+                            <span class="text-white d-block"
+                                style="width:80px; text-overflow: ellipsis; white-space: nowrap; overflow:hidden">Johathan
+                                Smith</span>
+                            <span class="small d-block text-white ">Organiser</span>
+                        </div>
+                    </div>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item text-white" href="#">Action</a>
+                        <a class="dropdown-item text-white" href="#">Another action</a>
+                        <div class="dropdown-divider bg-darkblue-500"></div>
+                        <a class="dropdown-item text-white" href="#">Something else here</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./documentation/index.html">
+                        Docs
+                    </a>
+                </li>
+                <!-- <li class="nav-item ">
+          <a class="nav-link mt-3" href="# ">Link</a>
+        </li> -->
+            </ul>
+        </div>
+    </header>
+    <main role="main">
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-5">
+                <!-- Main Content -->
+                <div class="col-12 col-xl-8">
+                    <h1 class="mb-4">User Profile Page</h1>
+                    <div class="mb-4">
+                        <ul class="list-unstyled list-inline w-100">
+                            <li class="list-inline-item max-width-8 mr-4 mr-lg-5"><a class="text-white"
+                                    href="./profile-main.html">Profile</a></li>
+                            <li class="list-inline-item max-width-8 mr-4 mr-lg-5"><a class="text-secondary"
+                                    href="./profile-billing.html">Billing</a></li>
+                            <li class="list-inline-item max-width-8 mr-4 mr-lg-5"><a class="text-secondary"
+                                    href="./profile-security.html">Security</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="row text-white mb-5">
+                        <div class="col-12 col-md-6 mb-5">
+                            <div class="bg-darkblue-700 rounded-bottom h-100 d-flex flex-column">
+                                <div class="bg-darkblue-800 m-0 rounded-top">
+                                    <h2 class="h5 font-weight-semibold p-4 m-0">Profile Photo</h2>
+                                </div>
+                                <div class="p-5 m-auto">
+                                    <div class="text-white m-auto text-center">
+                                        <div class="">
+                                            <h3>Upload your photo</h3>
+                                            <p>photo should be at least 300px x 300px</p>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-center pt-3">
+                                            <img class="mr-3 mr-lg-5 rounded-circle border border-darkblue-500"
+                                                src="./assets/svg/profile.svg" alt="Generic placeholder image">
+                                            <button class="btn btn-info">Upload a photo</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mb-5">
+                            <div class="bg-darkblue-700 rounded-bottom h-100">
+                                <div class="bg-darkblue-800 m-0 rounded-top">
+                                    <h2 class="h5 font-weight-semibold p-4 m-0">Basic Information</h2>
+                                </div>
+                                <div class=" p-5 ">
+                                    <form action="">
+                                        <div class="form-group">
+                                            <label for="email">E-Mail</label>
+                                            <input type="email" class="form-control" value="mail@mail.com" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="firstname">First Name</label>
+                                            <input type="text" class="form-control" name="firstname" value="Tester" />
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="lastname">Last Name</label>
+                                            <input type="text" class="form-control" name="lastname" value="Account" />
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous ">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>
+
+</body>
+
+</html>

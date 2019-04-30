@@ -87,7 +87,8 @@
     </header>
     <main role="main">
         <div class="container-fluid">
-            <div class="row justify-content-xl-center align-items-center p-3 bg-darkblue-800">
+            <div class="row justify-content-xl-center align-items-center p-3 bg-darkblue-800 sticky-top"
+                style="top:75px;">
                 <!-- Logo Container -->
                 <div class="col">
                     <div class="coral-gradient icon-box d-inline-block">
@@ -108,17 +109,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="sticky-top text-center">
+                <div class="col-12 col-lg-6" style="z-index:-1;">
+                    <div class="text-center sticky-top" style="top:75px;">
                         <img class="" src="./assets/svg/iphone-preview.svg" alt="Preview">
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
-                    <div class="card text-white mt-3 bg-darkblue-700">
+                    <div class="card form-config-box mt-3 bg-darkblue-700">
                         <div
                             class="card-header d-flex justify-content-between align-items-center py-3 px-5 bg-darkblue-800 font-weight-semibold">
                             <div>
-                                <h3 class="m-0">Info Banner</h3>
+                                <h3 class="box-title">Info Banner</h3>
                             </div>
                             <div class="d-flex align-items-center">
                                 <label class="switch right-wrong m-0">
@@ -126,7 +127,7 @@
                                     <span class="slider round"></span>
                                 </label>
                                 <button
-                                    class="btn btn-sm btn-info text-primary ml-3 py-1 px-2 font-weight-bold">i</button>
+                                    class="btn btn-sm btn-info text-primary ml-3 py-0 px-2 font-weight-bold">i</button>
                             </div>
 
                         </div>
@@ -223,6 +224,18 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js "
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous ">
+    </script>
+    <script>
+        $('document').ready(function () {
+
+            // $('#img-loader').show();
+
+            // main image loaded ?
+            $('#img-moment').on('load', function () {
+                // hide/remove the loading image
+                $('#img-loader').remove();
+            });
+        });
     </script>
 </body>
 

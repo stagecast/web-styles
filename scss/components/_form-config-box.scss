@@ -1,0 +1,20 @@
+.form-config-box {
+  // extends bootstrap card
+  @include border-radius($card-border-radius);
+  background-clip: border-box;
+  // border: none;
+  color: white;
+
+  .box-title {
+    margin: 0;
+  }
+
+  .card-header {
+    font-weight: $font-weight-semibold;
+  }
+
+  &.disabled, .disabled {
+    opacity: 0.2;
+    cursor: auto!important;
+  }
+}

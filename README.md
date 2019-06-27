@@ -32,3 +32,20 @@ Started Project provided by *Alexander Rechsteiner*
 **Bootstrap**
 
 - <https://github.com/twbs/bootstrap/>
+
+**Deployment**
+
+Every time you update the theme code, the version must be increased and tagged and checked in the remote repo. Then, log to Jenkins and trigger the build. 
+
+The style files will be taken from the css folder and added to the CDN with the following schema: 
+
+https://d2cb7i0wbc0znj.cloudfront.net/media/styles/<STYLES_VERSION>/stagecast.min.css
+https://d2cb7i0wbc0znj.cloudfront.net/media/styles/<STYLES_VERSION>/main.svg
+
+**NOTES**
+
+main.svg
+- The main.svg is an SVG Sprite containing all the stagecast icons. 
+- Right now the size is ~100KB and will get bigger
+- To import it in the web-apps, you have to copy-paste it into your repo.
+- The way we handle icons is likely to change in the future.

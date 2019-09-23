@@ -3,11 +3,11 @@
     line-height: $line-height-base;
     font-weight: $font-weight-semibold;
     font-size: $font-size-base;
-    color: #FFFFFF;
+    color: $label-color;
   }
   small {
     line-height: 0.9 * $line-height-base;
-    font-weight: $font-weight-semibold;
+    font-weight: $font-weight-normal;
     font-size: 0.875rem;
   }
 }
@@ -127,6 +127,7 @@ input:checked+.slider:before {
 }
 
 .custom-checkbox {
+  cursor: pointer;
   min-height: $custom-checkbox-indicator-size + 4;
   .custom-control-input~.custom-control-label {
     padding-left: $custom-checkbox-indicator-size / 2;

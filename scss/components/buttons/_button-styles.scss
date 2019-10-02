@@ -49,6 +49,7 @@ $value in $active-pallete {
   .icon {
     float: left;
     height: $btn-padding-y + $font-size-base;
+    width: $btn-padding-y + $font-size-base;
     padding: 0 0.15rem;
   }
 }
@@ -57,6 +58,7 @@ $value in $active-pallete {
   .icon {
     float: left;
     height: $btn-padding-y-sm + $font-size-sm;
+    width: $btn-padding-y-sm + $font-size-sm;
     padding: 0 0.2rem;
   }
 }
@@ -65,6 +67,7 @@ $value in $active-pallete {
   .icon {
     float: left;
     height: $btn-padding-y-lg + $font-size-lg - 0.3;
+    width: $btn-padding-y-lg + $font-size-lg - 0.3;
     padding: 0 0.1rem;
   }
 }

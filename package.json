@@ -1,6 +1,6 @@
 {
   "name": "general-styles",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "A starter project for a custom Bootstrap theme",
   "repository": "https://github.com/stagecast/styles",
   "main": "index.html",

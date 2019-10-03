@@ -52,6 +52,10 @@ $value in $active-pallete {
     width: $btn-padding-y + $font-size-base;
     padding: 0 0.15rem;
   }
+
+  .icon.icon-left {
+    float: right!important;
+  }
 }
 
 .btn-sm {

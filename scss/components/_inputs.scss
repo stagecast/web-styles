@@ -226,6 +226,8 @@ input:checked+.slider:before {
     left: 0;
     right: 0;
     bottom: 0;
+    width: 34px;
+    height: 34px;
     background-color: $darkblue-500;
     -webkit-transition: .2s;
     transition: .2s;
